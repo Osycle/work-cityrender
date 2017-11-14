@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		
+	  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+   	<link rel="stylesheet" href="css/main.css">
+
+
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.js"></script>
+
+    <title>Title</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+<body>
+	<noscript>
+		<p>Ваш браузер не поддерживает скрипты!<br/> 
+			 Пожалуйста подключите в настройках браузера Javascript</p>
+	</noscript> 
+	<!-- HEADER -->
+	
+	<div class="header-hidden"></div>
+
+	<header id="header" class="header-scroll">
+		<div class="container">
+			<div class="header-navbar">
+		    <!-- LOGOTYPE -->
+	      <div class="logo">
+	      	<a  href="index.html" ><img src="img/logo.png"/></a>
+	      </div>
+	      <!-- MENU TOGGLE BUTTON -->
+		     <button class="menu-toggle collapsed" type="button" data-toggle="modal" data-target="#menuModal">
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>
+		       <span class="icon-bar"></span>
+		    </button>
+		  </div>
+      <!-- NAVBAR -->
+	  	<nav class="main-navbar">
+
+	  		<div class="nav-feedback">
+		  		<button class="btn-blue-1" type="button" data-toggle="modal" data-target="#feedback-modal">
+		  				<b class="clc">Связаться с нами</b>
+		  		</button>
+		  	</div>
+
+
+        <!-- MENU -->
+       	<div class="nav-menu">
+	       	<div class="nav-header">
+
+
+          <ul class="menu-list">
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="ourcars.html">Наше авто</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+          </ul>
+					
+					<div class="dropdown-lang">
+					  <div tabindex="1" role="button" class="dropbtn">
+					  	<span>Ру</span><i class="fa fa-angle-down"></i>
+					  </div>
+					  <div class="dropdown-content">
+					    <a href="ru">Ру</a>
+					    <a href="uz">Уз</a>
+					    <a href="en">Англ</a>
+					  </div>
+					</div>
+
+      		</div>
+      	</div>
+	  	</nav>
+
+		</div><!-- ./CONTAINER -->
+	</header>
+
+
+
+	<!-- MIN MENU MODAL -->
+  <div class="min-menu-modal modal scale a-minMenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="min-menu">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	    	
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body min-navbar">
+	      	<!-- js append menu -->
+	      </div>
+	      
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal  slideInUp animated" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h2>Связаться с нами</h2>
+	      	<form id="feedback" method="post" action="feedback.php" class="contact-form">
+
+
+
+						<label>Ваше имя</label>
+						<input class="form-control" 
+									 type="text" 
+									 name="name" 
+									 placeholder="Имя" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Введите своё имя"/>
+
+
+
+						<label>Электронная почта</label>
+						<input class="form-control" 
+									 type="email" 
+									 name="email" 
+									 placeholder="email" autocomplete="off" required="required"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите электронную почту"/>
+
+
+						<label>Номер телефона</label>
+						<input class="form-control" type="tel" 
+									 name="phone" 
+									 placeholder="+998 (xx) xxx-xx-xx" autocomplete="off" required="required"
+									 minlength="14"
+									 data-toggle="popover" 
+									 data-trigger="focus"
+									 data-content="Укажите номер телефона"/>
+
+
+
+						<textarea class="form-control" 
+									 name="message" 
+									 placeholder="Сообщение"></textarea>
+						
+	      	</form>
+			      <div class="modal-footer">
+			      	<button type="submit" class="align-right btn-opacity" form="feedback" autofocus="autofocus">Отправить</button>
+			      </div>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- MAIN -->
+	<main class="container-fluid">
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+		<!-- BANNER -->
+		<div id="banner" class="row" style="background-image: url('img/slider/slide-4.jpg');" >
+			<div class="banner-shadow" 
+								data-aos="fade"
+								data-aos-duration="1000"
+								data-aos-delay="200">
+			</div>
+				<div class="container">
+
+					<div class="banner-content">
+
+						<h1 data-aos="fade-right"
+								data-aos-duration="1000"
+								data-aos-delay="300">
+								Контакты</h1>
+
+						<ol class="breadcrumb padd-hor-0 marg-bottom-0 marg-top-15" 
+								data-aos="fade-left"
+								data-aos-duration="1000"
+								data-aos-delay="300">
+
+						  <li><a href="index.html">Главная</a></li>
+						  <li class="active"><a href="">Контакты</a></li>
+
+						</ol>
+					</div>
+
+				</div> <!-- ./CONTEINER -->
+		</div><!-- ./BANNER -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="row feedback-contacts m-v-60 bg-color-white">
+			<div class="container">
+
+				<div class="content bgcolor-3 p-h-30 m-v-60 col-md-6 contacts-feedback wow animation">
+					<h2>Связаться с нами</h2>
+
+					<form id="feedback-contacts" method="post" action="" class="contact-form">
+						<div class="col-md-12 success-info">
+							<div id="success-message"></div>
+							<div id="fail-message"></div>
+						</div>
+
+
+
+						<!-- NAME -->
+						<span class="input input--hoshi input-name">
+							<input class="input__field input__field--hoshi" 
+										 form="feedback-contacts"
+										 type="text" 
+										 id="input-1" 
+										 name="name"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--hoshi" for="input-1">
+								<span class="input__label-content input__label-content--hoshi">Имя</span>
+							</label>
+						</span>
+
+
+						<!-- EMAIL -->
+						<span class="input input--hoshi input-email">
+
+							<input class="input__field input__field--hoshi" 
+										 form="feedback-contacts"
+										 type="email" 
+										 id="input-2" 
+										 name="email"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--hoshi" for="input-2">
+								<span class="input__label-content input__label-content--hoshi">Электронная почта</span>
+							</label>
+
+						</span>
+
+
+						<!-- TEL -->
+						<span class="input input--hoshi input-phone">
+
+							<input class="input__field input__field--hoshi" 
+										 form="feedback-contacts"
+										 type="tel" 
+										 id="input-3" 
+										 name="tel"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--hoshi" for="input-3">
+								<span class="input__label-content input__label-content--hoshi">Номер телефона</span>
+							</label>
+
+						</span>
+
+						<!-- MESSAGE -->
+						<span class="input input--hoshi textarea-msg">
+
+							<textarea class="input__field input__field--hoshi" 
+										 style="resize: none;"
+										 id="textarea-4"
+										 form="feedback-contacts"
+										 type="text" 
+										 name="message"
+										 autocomplete="off" 
+										 required="required"></textarea>
+
+							<label class="input__label input__label--hoshi" for="textarea-4">
+								<span class="input__label-content input__label-content--hoshi">Сообщение</span>
+							</label>
+
+						</span>
+
+						<div class="form-footer">
+			      	<button type="submit" class="align-right btn-opacity submit" form="feedback-contacts" autofocus="autofocus">Отправить</button>
+			      </div>
+
+
+					</form>
+
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+				<div class="m-v-60 p-h-60 col-md-6 contacts-content wow animation">
+
+					<h2>Контакты</h2>
+
+					<address>
+						<h4>Адрес</h4>
+						<p>
+							<i>
+								Республика Узбекистан, г.Ташкент,<br>
+								Яшнабадский район, <br>
+								ул. Уйсозлар, 23 А
+							</i>
+						</p>
+						<h4>Телефон</h4>
+						<p>
+							<em>+99871 280 24 97<br/>
+							+99871 280 32 34</em>
+						</p>
+
+						<h4>Email</h4>
+							<p>
+								<a href="mailto:manlogistic777@gmail.com">manlogistic777@gmail.com</a>
+							</p>
+					</address>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="">
+
+
+		<!-- MAP -->
+		<div class="map-content m-t-60">
+
+			<div class="container"></div>
+			<div id="map" class="row"></div>
+			<script>
+			//CONTACTS FORM
+			(function() {
+
+				if (!String.prototype.trim) {
+					(function() {
+						// Make sure we trim BOM and NBSP
+						var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+						String.prototype.trim = function() {
+							return this.replace(rtrim, '');
+						};
+					})();
+				}
+
+				[].slice.call( document.querySelectorAll( '.input__field' ) ).forEach( function( inputEl ) {
+
+					if( inputEl.value.trim() !== '' ) {
+						classie.add( inputEl.parentNode, 'input--filled' );
+					}
+
+					// events:
+					inputEl.addEventListener( 'focus', onInputFocus );
+					inputEl.addEventListener( 'blur', onInputBlur );
+				} );
+
+				function onInputFocus( ev ) {
+					classie.add( ev.target.parentNode, 'input--filled' );
+				}
+
+				function onInputBlur( ev ) {
+					if( ev.target.value.trim() === '' ) {
+						classie.remove( ev.target.parentNode, 'input--filled' );
+					}
+				}
+			})();
+
+
+			var i = {
+							// GOOGLE MAP INIT
+							gm_content: '<h3><a  href="index.html" ><img src="img/logo.png"/></a></h3>'+
+											'<p>Республика Узбекистан, г.Ташкент, Яшнабадский район, ул. Уйсозлар, 23 А</p>'+
+											'<p><strong>Телефоны:</strong></p>'+
+											'<p>+99871 280 24 97<br>+99871 280 24 97</p>'+
+											'<p><strong>E-mail:</strong></p>'+
+											'<p>manlogistic777@gmail.com</p>',
+
+							gm_title : 								'Мы',
+							gm_icon: 									"img/icons/marker.png",
+
+							gm_marker_position_lat:  	41.2579352,
+							gm_marker_position_lng:  	69.3347696,
+
+							gm_position_lat: 			 		41.2579352,
+							gm_position_lng: 				 	69.3347696
+					}
+
+			var mapBlock = document.getElementsByClassName("map-block")[0];
+
+		   	function initMap() {
+						var map = new google.maps.Map(document.getElementById('map'), {
+								zoom: 15,
+								center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
+								disableDefaultUI: true,
+								mapTypeId: 'terrain',
+								styles: [
+									{elementType: 'geometry', stylers: [{color: '#ececec'}]},
+									{elementType: 'labels.text.fill', stylers: [{color: '#797979'}]},
+									{elementType: 'labels.text.stroke', stylers: [{color: '#ffffff'}]},
+									{
+										featureType: 'landscape.natural',
+										elementType: 'geometry',
+										stylers: [{color: '#f7f7f7'}]
+									},
+									{
+										featureType: 'poi',
+										elementType: 'geometry',
+										stylers: [{color: '#f7f7f7'}]
+									},
+									{
+										featureType: 'poi.park',
+										elementType: 'geometry.fill',
+										stylers: [{color: '#e5e5e5'}]
+									},
+									{
+										featureType: 'road',
+										elementType: 'geometry',
+										stylers: [{color: '#ffffff'}]
+									},
+									{
+										featureType: 'road.local',
+										elementType: 'labels.text.fill',
+										stylers: [{color: '#806b63'}]
+									},
+									{
+										featureType: 'transit.line',
+										elementType: 'geometry',
+										stylers: [{color: '#f7f7f7'}]
+									},
+									{
+										featureType: 'transit.line',
+										elementType: 'labels.text.fill',
+										stylers: [{color: '#ffffff'}]
+									},
+									{
+										featureType: 'transit.line',
+										elementType: 'labels.text.stroke',
+										stylers: [{color: '#ffffff'}]
+									},
+									{
+										featureType: 'transit.station',
+										elementType: 'all',
+										stylers: [{visibility: 'off'}]
+									},
+									{
+										featureType: 'water',
+										elementType: 'geometry.fill',
+										stylers: [{color: '#ececec'}]
+									}
+								]
+						});
+						var marker = new google.maps.Marker({
+							position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
+							map: map,
+							icon: i.gm_icon,
+							title: i.gm_title
+						});
+						console.log(marker);
+						var infoWindow = new google.maps.InfoWindow({
+							content: i.gm_content,
+							maxWidth: "400"
+						});
+						var gm_status = false;
+						marker.addListener('click', function(){
+
+							if (gm_status){
+								infoWindow.open(map, marker);
+								$(function(){ if($( document ).width() > 991) $(mapBlock).slideUp(); });
+								gm_status = !gm_status;
+							}else{
+								$(function(){ if($( document ).width() > 991) $(mapBlock).slideDown(); });
+								infoWindow.close(map, marker);
+								gm_status = !gm_status;
+							}
+
+						});
+							if (gm_status){
+								infoWindow.open(map, marker);
+								$(function(){ if($( document ).width() > 991) $(mapBlock).slideUp(); });
+								gm_status = !gm_status;
+							}else{
+								$(function(){ if($( document ).width() > 991) $(mapBlock).slideDown(); });
+								infoWindow.close(map, marker);
+								gm_status = !gm_status;
+							}
+
+					}//initMap end
+
+			  </script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
+				</script>
+			</div>
+		</div><!-- ./MAP -->
+
+
+
+
+
+
+
+	</main><!-- ./MAIN -->
+
+
+
+
+
+
+
+
+
+
+
+	<!-- FOOTER -->
+	<footer id="footer" class="container-fluid">
+		<div class="skin-1">
+			<div class="container">
+
+				<div class="col-xs-12 footer-menu hidden-xs">
+					<ul>
+						<li><a href="about.html">О нас</a></li>
+						<li><a href="services.html">Услуги</a></li>
+						<li><a href="ourcars.html">Наше авто</a></li>
+						<li><a href="reviews.html">Отзывы</a></li>
+						<li><a href="contacts.html">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="col-xs-12 footer-logo">
+					<div class="f-logo">
+						<img src="img/footer-logo.png" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+		<div class="skin-2">
+			<div class="container">
+
+				<div class="col-xs-12 footer-info">
+					<div class="col-md-6 copyright">
+
+						<p>
+							<a href="https://www.life-style.uz" 
+									title="Создание и продвижение сайтов в Ташкенте"
+									style="text-decoration: underline;">Создание сайтов</a> 
+
+									<em><font color="skyblue">Life</font></em>
+
+									<font color="ghostwhite">Style</font>
+						</p>
+					</div>
+				
+					<div class="col-md-6 social">
+						<ul>
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
+							<li><a href=""><i class="fa fa-instagram"></i></a></li>
+							<li><a href=""><i class="fa fa-telegram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</footer>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

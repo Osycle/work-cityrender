@@ -1,0 +1,218 @@
+/*
+		_media.scss	
+*/
+
+
+
+@media only screen and (max-width: 1199px){
+	html body{
+		font-size: 15px;
+	}
+	.nav-menu:not(.min) .menu-list > li > a{
+		margin: 10px 5px;
+	}
+	.nav-menu:not(.min) .menu-list{
+		font-size: em(17, 16);
+	}
+
+	.nav-feedback{
+		.btn-blue-1{
+			.clc{
+				padding: 20px 15px;
+				
+			}
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 991px){
+	html body{
+		font-size: 14px;
+	}
+	.logo, .menu-toggle{
+
+		@include table-celling( 90px );
+		
+	}
+	.header-hidden{
+		height: 90px;
+	}
+	.logo{
+		text-align: center;
+		img{
+		 	width: 150px;
+		}
+	}
+
+	.dropdown-lang{
+		margin: 0;
+		top: -10%;
+		position: absolute;
+	}
+
+
+	.img-circle{
+		margin: auto;
+	}
+	[class*="padd-right"]{
+		padding: initial;
+	}
+
+
+	.main-navbar{
+		display: none;
+	}
+	.skin-1, .skin-2{
+		display: block;
+		height: 100%;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	#footer{
+		text-align: center;
+		section{
+			margin: 30px 0;
+    	display: inline-block;
+    	button{
+    		float: initial;
+    		width: 100%;
+    	}
+    	span{
+    		float: initial;
+    	}
+
+		}
+		.copyright, .social{
+			margin-top: 10px;
+		}
+		.social{
+			text-align: center !important;
+		}
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+
+	html body{
+		font-size: 13px;
+	}
+
+	main{
+
+
+		text-align: center;
+		h1{
+			&::before{
+				left: 50%;
+	    	margin-left: -25px;
+			}
+		}
+		.about-short, .news-short{
+			padding: 0;
+		}
+		.news-desc{
+			margin-left: 5%;
+			padding-right: 5%;
+		}
+		.desc{
+			margin: 30px 0;
+			padding-right: 15px;
+			padding-left: 15px;
+		}
+		.btn-lnk{
+			margin: auto;
+			margin-top: 30px;
+		}
+
+
+
+	}
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px){
+	html body{
+		font-size: 12px;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// MIN-WIDTH
+
+
+@media only screen and (min-width: 1440px){
+
+	.logo{
+		position: absolute;
+		left: 5%;
+	}
+	.nav-feedback{
+		position: absolute;
+		right: 5%;
+	}
+
+}
+
+@media (min-width: 768px) {
+
+} 
+@media (min-width: 992px) {
+	 .menu-toggle {
+    display: none;
+  }
+} 
