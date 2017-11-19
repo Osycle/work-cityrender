@@ -12,16 +12,8 @@
 		<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
    	<link rel="stylesheet" href="css/main.css">
-
-
-		<script src="js/scripts.min.js"></script>
-		<script src="js/main.js"></script>
-		
 		<!-- REVOLUTION BANNER CSS SETTINGS -->
 		<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" />
-		<!-- jQuery REVOLUTION Slider  -->
-		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 
     <title>Title</title>
 
@@ -32,159 +24,142 @@
 
   </head>
 <body>
+
+	<div id="page">
+
+
+
+
+
+
+
 	<noscript>
-		<h1>Ваш браузер не поддерживает скрипты!<br/> 
-			 Пожалуйста подключите в настройках браузера Javascript</h1>
+		<p>Ваш браузер не поддерживает скрипты!<br/> 
+			 Пожалуйста подключите в настройках браузера Javascript</p>
 	</noscript> 
 	<!-- HEADER -->
 	
 	<div class="header-hidden"></div>
+
+
+
+
+
 	<header id="header" class="header-scroll">
-		<div class="container">
-			<div class="header-navbar">
-		    <!-- LOGOTYPE -->
-	      <div class="logo">
-	      	<a  href="index.html" ><img src="img/logo.png"/></a>
-	      </div>
-	      <!-- MENU TOGGLE BUTTON -->
-		     <button class="menu-toggle collapsed" type="button" data-toggle="modal" data-target="#menuModal">
-		       <span class="icon-bar"></span>
-		       <span class="icon-bar"></span>
-		       <span class="icon-bar"></span>
-		    </button>
-		  </div>
-      <!-- NAVBAR -->
-	  	<nav class="main-navbar">
+		<!-- HEADER TOP -->
+		<div class="skin-header-top ">
+			<div class="container">
+				<!-- HEADER NAVBAR -->
+				<div class="header-navbar">
 
-	  		<div class="nav-feedback">
-		  		<button class="btn-blue-1" type="button" data-toggle="modal" data-target="#feedback-modal">
-		  				<b class="clc">Связаться с нами</b>
-		  		</button>
-		  	</div>
+					<div class="p-0">
 
 
-        <!-- MENU -->
-       	<div class="nav-menu">
-	       	<div class="nav-header">
-
-
-	          <ul class="menu-list">
-							<li><a href="about.html">О нас</a></li>
-							<li><a href="services.html">Услуги</a></li>
-							<li><a href="ourcars.html">Наше авто</a></li>
-							<li><a href="reviews.html">Отзывы</a></li>
-							<li><a href="contacts.html">Контакты</a></li>
-	          </ul>
-						
-						<div class="dropdown-lang">
-						  <div tabindex="1" role="button" class="dropbtn">
-						  	<span>Ру</span><i class="fa fa-angle-down"></i>
-						  </div>
-						  <div class="dropdown-content">
-						    <a href="ru">Ру</a>
-						    <a href="uz">Уз</a>
-						    <a href="en">Англ</a>
-						  </div>
+						<div class="slogan hidden-sm hidden-xs">
+							<span>
+								<text class="color-1">Стильный дизайн</text><br>
+								<font face='Arial' size="2">Интерьер, экстерьер, ландшафт</font>
+							</span>
 						</div>
 
-      		</div>
-      	</div>
-	  	</nav>
+						<!-- LOGOTYPE -->
+			      <div class="logo">
+			      	<a  href="index.html" ><img src="img/logo.svg"/></a>
+			      </div>
 
-		</div><!-- ./CONTAINER -->
+
+
+						<div class="phones hidden-sm hidden-xs">
+							<span class="icomoon icon-phone-call"></span>
+
+							<text> 
+								(+998 97) 777-00-00<br>
+							 	(+998 97) 777-00-00 
+							</text>
+
+						</div>
+
+
+
+
+					</div>
+
+
+			  </div><!-- ./HEADER NAVBAR -->
+			</div><!-- ./CONTAINER -->
+		</div><!-- ./HEADER TOP -->
+
+
+
+     <!-- HEADER BOTTOM -->
+		<div class="skin-header-footer ">
+      <div class="container">
+
+	      <!-- MAIN NAVBAR -->
+			 	<nav class="main-navbar">
+
+
+		        <!-- MENU -->
+		       	<div class="nav-menu">
+			       	<div class="nav-header">
+
+			          <ul class="menu-list">
+									<li><a href="index.html">Главная</a></li>
+									<li><a href="about.html">О нас</a>
+										<ul class="sub-menu-1">
+											<li><a href="ouremployees.html">Наши сотрудники</a></li>
+										</ul>
+									</li>
+									<li><a href="portfolio.html">Портфолио</a></li>
+									<li><a href="services.html">Улуги</a></li>
+									<li><a href="3dtour.html">3D Тур</a></li>
+									<li><a href="partners.html">Наши партнеры</a></li>
+									<li><a href="contacts.html">Контакты</a></li>
+							  </ul>
+							
+			      	</div>
+			      </div>
+
+			
+			  </nav><!-- ./MAIN NAVBAR -->
+
+			</div>
+		</div>
+		
 	</header>
 
 
 
-	<!-- MIN MENU MODAL -->
-  <div class="min-menu-modal modal scale a-minMenu" id="menuModal" tabindex="-1" role="dialog" aria-labelledby="min-menu">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	    	
-	    	<button type="button" class="btn" data-dismiss="modal">
-	    		<span class="icon-bar"></span>
-	    		<span class="icon-bar"></span>
-	    	</button>
 
-	      <div class="modal-body min-navbar">
-	      	<!-- js append menu -->
-	      </div>
-	      
-	    </div>
-	  </div>
-	</div>
+	<!-- MIN - MENU -->
+  <div class="min-menu hidden-md hidden-lg">
 
+	  <input id="hamburger" class="hamburger" type="checkbox"/>
 
+	  <label class="hamburger" for="hamburger">
+	    <i></i>
+	    <text>
+	      <close>Закрыть</close>
+	      <open>Меню</open>
+	    </text>
+	  </label>
 
+	  <section class="drawer-list">
+        <ul class="min-menu-list">
+					<li><a href="index.html">Главная</a></li>
+					<li><a href="about.html">О нас</a>
+						<ul class="sub-menu-1">
+							<li><a href="ouremployees.html">Наши сотрудники</a></li>
+						</ul>
+					</li>
+					<li><a href="portfolio.html">Портфолио</a></li>
+					<li><a href="services.html">Улуги</a></li>
+					<li><a href="3dtour.html">3D Тур</a></li>
+					<li><a href="partners.html">Наши партнеры</a></li>
+					<li><a href="contacts.html">Контакты</a></li>
+			  </ul>
+	   </section>
 
-
-
-	<!-- FEEDBACK MODAL-->
-	<div class="feedback-modal modal  slideInUp animated" id="feedback-modal" tabindex="-1" role="dialog" aria-labelledby="feedback">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-
-	    	<button type="button" class="btn" data-dismiss="modal">
-	    		<span class="icon-bar"></span>
-	    		<span class="icon-bar"></span>
-	    	</button>
-
-	      <div class="modal-body">
-
-
-					<div class="col-md-12 success-info">
-						<div id="success-message"></div>
-						<div id="fail-message"></div>
-					</div>
-					<h2>Связаться с нами</h2>
-	      	<form id="feedback" method="post" action="feedback.php" class="contact-form">
-
-
-
-						<label>Ваше имя</label>
-						<input class="form-control" 
-									 type="text" 
-									 name="name" 
-									 placeholder="Имя" autocomplete="off" required="required"
-									 data-toggle="popover" 
-									 data-trigger="focus"
-									 data-content="Введите своё имя"/>
-
-
-
-						<label>Электронная почта</label>
-						<input class="form-control" 
-									 type="email" 
-									 name="email" 
-									 placeholder="email" autocomplete="off" required="required"
-									 data-toggle="popover" 
-									 data-trigger="focus"
-									 data-content="Укажите электронную почту"/>
-
-
-						<label>Номер телефона</label>
-						<input class="form-control" type="tel" 
-									 name="phone" 
-									 placeholder="+998 (xx) xxx-xx-xx" autocomplete="off" required="required"
-									 minlength="14"
-									 data-toggle="popover" 
-									 data-trigger="focus"
-									 data-content="Укажите номер телефона"/>
-
-
-
-						<textarea class="form-control" 
-									 name="message" 
-									 placeholder="Сообщение"></textarea>
-						
-	      	</form>
-			      <div class="modal-footer">
-			      	<button type="submit" class="align-right btn-opacity" form="feedback" autofocus="autofocus">Отправить</button>
-			      </div>
-
-	      </div>
-	    </div>
-	  </div>
 	</div>
 
 
@@ -199,88 +174,6 @@
 
 
 
-
-
-
-
-
-
-
-		<script>
-		/**
-			REVOLUTION Slider
-		*/
-			  $(function() {
-			  	
-			    $('.rev-slider').revolution({
-						delay:9000,
-						startwidth:1170,
-						startheight: 845,
-						autoHeight:"off",
-						fullScreenAlignForce:"off",
-
-						onHoverStop:"off",
-
-						thumbWidth:100,
-						thumbHeight:50,
-						thumbAmount:3,
-
-						hideThumbsOnMobile:"off",
-						hideBulletsOnMobile:"on",
-						hideArrowsOnMobile:"off",
-						hideThumbsUnderResoluition:0,
-
-						hideThumbs:5,
-						hideTimerBar:"on",
-
-						keyboardNavigation:"off",
-
-						navigationType:"bullet",
-						navigationArrows:"none",
-						navigationStyle:"round",
-
-						navigationHAlign:"center",
-						navigationVAlign:"bottom",
-						navigationHOffset: 0,
-						navigationVOffset:30,
-
-						soloArrowLeftHalign:"left",
-						soloArrowLeftValign:"center",
-						soloArrowLeftHOffset:20,
-						soloArrowLeftVOffset:0,
-
-						soloArrowRightHalign:"right",
-						soloArrowRightValign:"center",
-						soloArrowRightHOffset:20,
-						soloArrowRightVOffset:0,
-
-
-						touchenabled:"on",
-						swipe_velocity:"0.7",
-						swipe_max_touches:"1",
-						swipe_min_touches:"1",
-						drag_block_vertical:"false",
-
-						stopAtSlide:-1,
-						stopAfterLoops:-1,
-						hideCaptionAtLimit:0,
-						hideAllCaptionAtLilmit:0,
-						hideSliderAtLimit:0,
-
-						fullWidth:"off",
-						fullScreen:"on",
-						fullScreenOffsetContainer: "",
-
-						dottedOverlay:"none",
-						forceFullWidth:"off",
-
-			      shadow:0
-			 
-
-			    });
-
-			 	});
-			</script>
 
 
 
@@ -288,217 +181,199 @@
 
 	<div class="index-slider">
 		<div class="fullscreen-container">
-			<div class="rev-slider">
+			<hr class="line-shadow-1">
+			<div class="rev-slider" >
 				<ul>
 
 					<!-- SLIDE -->
 					<li class="slide-1" 
-							data-transition="zoomout"
-							data-masterspeed="800">
+							data-transition="papercut"
+							data-masterspeed="2000">
 
 						<img src="img/slider/slide-1.jpg">
 
-						<div class="caption customin " 
-								 data-x="center" 
-								 data-y="center"
-								 data-voffset="-150"
-								 data-speed="500" 
-								 data-start="700" 
-								 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-								 data-easing="easeOutBack">
-							<h1 >ЖД перевозки</h1>
-						</div>
+							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort " 
+									 data-x="left" 
+									 data-y="top"
+									 data-voffset="75"
+									 data-hoffset="100"
+									 data-speed="1300"
+									 data-start="1000" 
+									 data-easing="easeOutBack">
 
+										<h1  class="tp-caption randomrotate start splitted" 
+												 data-speed="1000"
+												 data-elementdelay="0.03"
+												 data-endelementdelay="0.03"
+												 data-splitin="lines" 
+											 	 data-splitout="lines" 
+												 data-start="1700" 
+												 data-easing="easeOutBack">
+												 Дизайн<br>
+												 интерьеров
+										</h1>
 
-						<div class="tp-caption sfb fade  start" 
-								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="-50"
-								 data-speed="500" 
-								 data-start="900" >
-							
-							<p>Вид наземного транспорта, перевозка грузов и 
-								пассажиров на котором осуществляется колёсными 
-								транспортными средствами по рельсовым путям.</p>
+										<p  class="tp-caption randomrotate start splitted" 
+												 data-speed="650"
+												 data-elementdelay="0.03"
+												 data-endelementdelay="0.8"
+												 data-splitin="chars" 
+											 	 data-splitout="lines" 
+												 data-start="2000" 
+												 data-easing="easeInOut">
+												 Качественно и <br>
+												 профессионально
+										</p>
+									 
 
-						</div>
+							</div>
 
 
 						<div class="tp-caption customin start show" 
 								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="50" 
-								 data-speed="500"
-								 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="1000">
-							<button class="btn-red-1">
-									<a href="services-in.html">Подробнее</a>
-							</button>
+								 data-y="bottom" 
+								 data-voffset="-50" 
+								 data-hoffset="0" 
+								 data-speed="700"
+								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								 data-start="3000">
+								<b class="btn-default">
+									<a href="services-in.html">Перейти в раздел</a>
+								</b>
 						</div>
-
 					</li>
 
 
 
 					<!-- SLIDE -->
 					<li class="slide-2" 
-							data-transition="zoomout"
-							data-masterspeed="800">
+							data-transition="papercut"
+							data-masterspeed="2000">
 
 						<img src="img/slider/slide-2.jpg">
 
-						<div class="caption customin " 
-								 data-x="center" 
-								 data-y="center"
-								 data-voffset="-150"
-								 data-speed="500" 
-								 data-start="700" 
-								 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-								 data-easing="easeOutBack">
-							<h1>Морские перевозки</h1>
-						</div>
+							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort" 
+									 data-x="left" 
+									 data-y="top"
+									 data-voffset="75"
+									 data-hoffset="100"
+									 data-speed="1300"
+									 data-start="1000" 
+									 data-easing="easeOutBack">
 
+										<h1  class="tp-caption randomrotate start splitted" 
+												 data-speed="1000"
+												 data-elementdelay="0.03"
+												 data-endelementdelay="0.03"
+												 data-splitin="lines" 
+											 	 data-splitout="lines" 
+												 data-start="1700" 
+												 data-easing="easeOutBack">
+												 Живопись и<br>
+												 декор
+										</h1>
 
-						<div class="tp-caption sfb fade  start" 
-								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="-50"
-								 data-speed="500" 
-								 data-start="900" >
-							
-							<p>
-								Вид водного транспорта. К морскому транспорту относится любое судно, 
-								способное передвигаться по водной поверхности 
-								(морей, океанов и прилегающих акваторий). . .
-							</p>
+										<p  class="tp-caption randomrotate start splitted" 
+												 data-speed="650"
+												 data-elementdelay="0.03"
+												 data-endelementdelay="0.8"
+												 data-splitin="chars" 
+											 	 data-splitout="lines" 
+												 data-start="2000" 
+												 data-easing="easeInOut">
+												 Качественно и <br>
+												 профессионально
+										</p>
+									 
 
-						</div>
+							</div>
 
 
 						<div class="tp-caption customin start show" 
 								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="50" 
-								 data-speed="500"
-								 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="1000">
-							<button class="btn-red-1">
-									<a href="services-in.html">Подробнее</a>
-							</button>
+								 data-y="bottom" 
+								 data-voffset="-50" 
+								 data-hoffset="0" 
+								 data-speed="700"
+								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								 data-start="3000">
+								<b class="btn-default">
+									<a href="services-in.html">Перейти в раздел</a>
+								</b>
 						</div>
-
 					</li>
+
+
+
 
 
 					<!-- SLIDE -->
 					<li class="slide-3" 
-							data-transition="zoomout"
-							data-masterspeed="800">
+							data-transition="papercut"
+							data-masterspeed="2000">
 
 						<img src="img/slider/slide-3.jpg">
 
-						<div class="caption customin " 
-								 data-x="center" 
-								 data-y="center"
-								 data-voffset="-150"
-								 data-speed="500" 
-								 data-start="700" 
-								 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-								 data-easing="easeOutBack">
-							<h1>Авто перевозки</h1>
-						</div>
+							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort" 
+									 data-x="left" 
+									 data-y="top"
+									 data-voffset="75"
+									 data-hoffset="100"
+									 data-speed="1300"
+									 data-start="1000" 
+									 data-easing="easeOutBack">
 
+										<h1  class="tp-caption randomrotate start splitted" 
+												 data-speed="1000"
+												 data-elementdelay="0.03"
+												 data-endelementdelay="0.03"
+												 data-splitin="lines" 
+											 	 data-splitout="lines" 
+												 data-start="1500" 
+												 data-easing="easeOutBack">
+												 Дизайн<br>
+												 интерьеров
+										</h1>
 
-						<div class="tp-caption sfb fade  start" 
-								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="-50"
-								 data-speed="500" 
-								 data-start="900" >
-							
-							<p>
-								Вид водного транспорта. К морскому транспорту относится любое судно, 
-								способное передвигаться по водной поверхности 
-								(морей, океанов и прилегающих акваторий). . .
-							</p>
+										<p  class="tp-caption randomrotate start splitted" 
+												 data-speed="650"
+												 data-elementdelay="0.03"
+												 data-endelementdelay="0.8"
+												 data-splitin="chars" 
+											 	 data-splitout="lines" 
+												 data-start="2000" 
+												 data-easing="easeInOut">
+												 Качественно и <br>
+												 профессионально
+										</p>
+									 
 
-						</div>
-
-
-						<div class="tp-caption customin start show" 
-								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="50" 
-								 data-speed="500"
-								 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="1000">
-							<button class="btn-red-1">
-									<a href="services-in.html">Подробнее</a>
-							</button>
-						</div>
-
-					</li>
-
-
-					<!-- SLIDE -->
-					<li class="slide-4" 
-							data-transition="zoomout"
-							data-masterspeed="800">
-
-						<img src="img/slider/slide-4.jpg">
-
-						<div class="caption customin " 
-								 data-x="center" 
-								 data-y="center"
-								 data-voffset="-150"
-								 data-speed="500" 
-								 data-start="700" 
-								 data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;"
-								 data-easing="easeOutBack">
-							<h1>Страхование грузов</h1>
-						</div>
-
-
-						<div class="tp-caption sfb fade  start" 
-								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="-50"
-								 data-speed="500" 
-								 data-start="900" >
-							
-							<p>
-								Один из видов имущественного страхования, 
-								имеющий целью защиту имущественных интересов владельцев 
-								грузов на случай наступления убытков, вызванных различного 
-								рода происшествиями (страховыми событиями). . .
-							</p>
-
-						</div>
+							</div>
 
 
 						<div class="tp-caption customin start show" 
 								 data-x="center" 
-								 data-y="center" 
-								 data-voffset="50" 
-								 data-speed="500"
-								 data-customin="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0;scaleY:0;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="1000">
-							<button class="btn-red-1">
-									<a href="services-in.html">Подробнее</a>
-							</button>
+								 data-y="bottom" 
+								 data-voffset="-50" 
+								 data-hoffset="0" 
+								 data-speed="700"
+								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+								 data-start="3000">
+								<b class="btn-default">
+									<a href="services-in.html">Перейти в раздел</a>
+								</b>
 						</div>
-
 					</li>
+
+				
 
 
 
 				</ul>
 			</div>
+			<hr class="line-shadow-2">
 		</div>
-	</div>
-
-
-
+	</div> <!-- ./END SLIDER -->
 
 
 
@@ -527,6 +402,26 @@
 
 
 
+<div class="container">
+	<div id="skrollr-body">
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="container">
+
+		<path
+    	 style="stroke-width:1.33333337 fill:none;stroke:white;stroke-width:7;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:6000;stroke-dashoffset:0"
+     d="m 623.5217,2736.5664 c -11.31767,-9.9213 -13.81776,-12.6401 -9.18838,-9.9922 3.0001,1.716 22.5959,19.9576 21.52171,20.0345 -0.44639,0.032 -5.99639,-4.4871 -12.33333,-10.0423 z m -27.8664,-24.8582 C 564.24092,2683.77 502.43906,2619.4606 459.81175,2570.353 256.43084,2336.0534 101.19401,2078.2222 37.335487,1868.6667 10.152744,1779.465 -2.5675942,1694.2928 1.3075781,1627.4332 3.7094697,1585.9926 11.531955,1529.0054 20.721716,1486 46.443002,1365.6323 96.55499,1285.1558 174.8738,1238.4425 c 68.41838,-40.8083 167.0865,-57.6247 311.92687,-53.1631 68.79325,2.1191 114.67504,5.238 217.86599,14.8099 190.75282,17.694 197.46065,18.2521 279.33332,23.2394 55.60592,3.3872 97.21012,6.1828 218.00002,14.6484 262.7042,18.4118 380.3582,20.7407 500,9.8974 130.5385,-11.8309 229.3078,-43.9946 294,-95.7394 23.3586,-18.6837 48.029,-46.688 64.2948,-72.9836 87.4841,-141.42858 66.1686,-384.01073 -64.465,-733.64716 C 1955.5124,237.59618 1894.512,97.281896 1852.7256,16.333334 c -8.3682,-16.21093069 -9.2655,-19.8623724 -3.0722,-12.5019792 5.8584,6.9622362 35.0055,66.2392352 65.3166,132.8353152 119.2285,261.95619 196.9725,518.08614 215.1038,708.66667 2.9343,30.84224 3.968,87.98352 2.0502,113.33334 -13.4932,178.36002 -104.5988,260.59582 -324.124,292.56862 -87.0908,12.6844 -200.7036,18.4456 -308.6667,15.6523 -90.2015,-2.3338 -141.8997,-5.1637 -320.6667,-17.5529 -52.4333,-3.6339 -114.2333,-7.8184 -137.3333,-9.2991 -446.26707,-28.6048 -690.73009,-10.968 -832.26638,60.044 -103.99421,52.1763 -163.305927,138.2571 -185.06287,268.5871 -10.794496,64.662 -11.529851,115.4563 -2.58658,178.6667 22.894036,161.8134 107.24985,355.0081 245.38955,562 94.60887,141.7642 210.28928,283.6629 314.40784,385.6666 15.53216,15.2167 27.90776,27.6667 27.50134,27.6667 -0.40641,0 -6.28382,-4.9313 -13.0609,-10.9585 z"
+     id="path12"
+     inkscape:connector-curvature="0" 
+     data-2000="stroke-dashoffset:3000;" data-4000="stroke-dashoffset:9000;"
+      />
+		</svg>
+
+	</div>
+	</div>
+
+
+
+
+<!-- data-3000="stroke-dashoffset:6000;" data-4000="stroke-dashoffset:0;" -->
 
 
 
@@ -537,644 +432,314 @@
 
 
 
-		<!-- SHORT-ABOUT -->
-		<div class="row m-v-60">
+		<div class="row short-services m-v-60">
 			<div class="container">
 
-				<h1>О компании</h1>
 
-				<div class="short-about">
-					<!-- TAB --> 
-					<div class="col-xs-12 ver-tabs bg-color-white">
 
-						<div class="p-v-30 float-left p-h-30 parag-m-t-15 col-md-8">
-						  <!-- Nav tabs -->
-						  <ul class="ver-tab-nav" role="tablist">
-						    <li class="active">
-						    	<a href="#ver-info-1" data-toggle="tab">
-						    		<b>Информация о нас</b>
-						    	</a>
-						    </li>
-						    <li>
-						    	<a href="#ver-info-2" data-toggle="tab">
-						    		<b>Наша миссия</b>
-						    	</a>
-						    </li>
-						    <li>
-						    	<a href="#ver-info-3" data-toggle="tab">
-						    		<b>Цели компании</b>
-						    	</a>
-						    </li>
-						  </ul>
+				<div class="services-list col-md-3">
 
-						  <!-- Tab panes -->
-						  <div class="ver-tab-content list-style-1">
+					<div class="sm-align-center">
+						<ul>
+							<li><a href=""><i class="icomoon icon-blueprint"></i>Дизайн интерьера</a></li>
+							<li><a href=""><i class="icomoon icon-building"></i>Дизайн экстерьера</a></li>
+							<li><a href=""><i class="icomoon icon-architecture"></i>Ландшафтный дизайн</a></li>
+							<li><a href=""><i class="icomoon icon-house-sketch"></i>Дизайн и изготовление мебели</a></li>
+							<li><a href=""><i class="icomoon icon-chimney"></i>Фибробетон</a></li>
+							<li><a href=""><i class="icomoon icon-pattern"></i>Художественная ковка</a></li>
+							<li><a href=""><i class="icomoon icon-brickwall"></i>Живопись и декор</a></li>
+							<li><a href=""><i class="icomoon icon-ferris"></i>3d тур</a></li>
+							<li><a href=""><i class="icomoon icon-house-sketch"></i>Процесс работ</a></li>
+						</ul>
+					</div>
 
-						    <div role="tabpanel" class="tab-pane fadeIn animated active" id="ver-info-1">
-						    	<p>
-						    		Автомобильные грузоперевозки являются основным видом деятельности компании . 
-						    		Мы оказываем услуги перевозки грузов по территории Европейского Союза, СНГ, Турции, 
-						    		Индии и ОАЭ.
-						    	</p>
-						    	<p>
-										Для организации перевозок автомобильным транспортом мы 
-										используем как собственный, так и привлеченный автопарк. 
-										Благодаря этому нам удалось максимально расширить географию 
-										наших автоперевозок и удовлетворять потребности клиентов в 
-										полном объеме.
-						    	</p>
-						    	<ul>
-						    		<li>Автомобильные грузоперевозки  подтвердили универсальность</li>
-										<li>Междугородние перевозки пользуются популярностью</li>
-										<li>ЖД перевозки осуществляются колёсными транспортнымисредствами, по железнодорожным путям</li>
-						    	</ul>
+				</div> 
+
+				<div class="index-info parag-m-v-15 col-md-9 link-hover">
+					<div class="p-h-30">
+						<h1>Главная</h1>
+						<div>
+							<p>
+								<text class="color-1">CITY RENDER</text> - фамильная студия дизайна 
+								занимающаяся разработкой дизайна интерьера, 
+								экстерьера, ландшафта, мебели и художественной ковки. 
+								А также осуществляет "авторский надзор" и ведение проекта 
+								"под ключ". Руководителями студии являются дизайнеры 
+								Гузев Павел Александрович и Гузева Юлия Сергеевна. 
+								Под их началом работают квалифицированные спецtиалисты 
+								высокого уровня. Эксклюзивность, технологичность, 
+								качество - это критерии при разработке каждого дизайн-проекта.
+							</p> 
+	  					<br>
+							<p>
+								<text class="color-1">CITY RENDER</text>  сотрудничает с передовыми 
+								производителями и поставщиками эксклюзивных ремонтно-строительных материалов, 
+								техники и декоративных элементов, что позволяет воплощать проекты высокой 
+								сложности. Нашими партнерами являются такие зарекомендовавшие себя на рынке 
+								компании как: Viva Deluxe, Галерея интерьера, Design
+								49, Formerin Italia, Gallery decor, Галерея дизайна,  Mega Comfort, 
+								Smart Home, Glass-Expo, Oikos, Maxick, Monaco Carpet
+								и многие другие.
+	  					</p>
+	  					<br>
+	  					<p>
+	  						На сайте <a href="">City-Render.uz</a> вы можете ознакомиться 
+	  						с различными направлениями дизайна нашей студии и процессом разработки. 
+	  						Так же здесь представлены кованные и фибробетонные изделия, 
+	  						а также картины и репродукции наших художников.
+	  					</p>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="row short-news m-v-60">
+			<div class="container">
+
+				<div class="col-xs-12">
+					
+					<div class="short-news-header col-md-3">
+						<hr class="line-shadow-1">
+						<h1>Новости и события</h1>
+					</div>
+
+
+
+					<div class="short-news-content flex-box col-md-9">
+
+
+						<figure class="box">
+							<a href="">
+								<div class="img-content"><img src="img/news/1.jpg"></div>
+								<div class="header-content">
+									<p>Художественная ковка в ташкенте</p>
+								</div>
+							</a>
+							<div class="info-content">
+								<time>4 Сентября 2017</time>
+								<span class="view"><i class="fa fa-eye"></i>112</span>
+							</div>
+							<div class="desc-content">
+								<p>
+									Художественная ковка - это универсальный способ сделать интерьер 
+									индивидуальними Да-да , именно универсальный
+								</p>
+							</div>
+						</figure>
+						
+						<figure class="box">
+							<a href="">
+								<div class="img-content"><img src="img/news/2.jpg"></div>
+								<div class="header-content">
+									<p>Художественная ковка в ташкенте</p>
+								</div>
+							</a>
+							<div class="info-content">
+								<time>5 Сентября 2017</time>
+								<span class="view"><i class="fa fa-eye"></i>112</span>
+							</div>
+							<div class="desc-content">
+								<p>
+									Художественная ковка - это универсальный способ сделать интерьер 
+									индивидуальними Да-да , именно универсальный
+								</p>
+							</div>
+						</figure>
+						
+						<figure class="box">
+							<a href="">
+								<div class="img-content"><img src="img/news/3.jpg"></div>
+								<div class="header-content">
+									<p>Фибробетон в ташкенте</p>
+								</div>
+							</a>
+							<div class="info-content">
+								<time>15 Сентября 2017</time>
+								<span class="view"><i class="fa fa-eye"></i>112</span>
+							</div>
+							<div class="desc-content">
+								<p>
+									Художественная ковка - это универсальный способ сделать интерьер 
+									индивидуальними Да-да , именно универсальный
+								</p>
+							</div>
+						</figure>
+
+						
+						
+
+
+					</div>
+
+
+					<b class="btn-opacity">
+						<a href="">Все новости</a>
+					</b>
+
+				</div>
+
+			</div>
+			<div class="m-t-20 content-img-sofa" data-1500="transform: translate3d(0%, 100%, 0px);" data-2600="transform: translate3d( 0%, 0%, 0px);">
+				<img src="img/sofa.png"/>
+			</div>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="iconcity">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="row short-partners">
+		<div class="container">
+
+			<div class="short-partners-content">
+				<h1>Наши партнеры</h1>
+				<div class="col-xs-12 carousel-partners">
+						<hr class="line-shadow-1">
+						<div class="carousel-content">
+
+						  <div class="carousel-cell partners-item">
+						    <div class="partners-img">
+						    	<img src="img/partners/1.png">
 						    </div>
-
-						    <div role="tabpanel" class="tab-pane fadeIn animated" id="ver-info-2">
-						    	<p>
-						    		Для организации перевозок автомобильным транспортом мы 
-										используем как собственный, так и привлеченный автопарк. 
-										Благодаря этому нам удалось максимально расширить географию 
-										наших автоперевозок и удовлетворять потребности клиентов в 
-										полном объеме.
-						    	</p>
-						    </div>
-
-
-						    <div role="tabpanel" class="tab-pane fadeIn animated" id="ver-info-3">
-						    	<p>
-						    		Вид наземного транспорта, перевозка грузов и 
-										пассажиров на котором осуществляется колёсными 
-										транспортными средствами по рельсовым путям.
-						    	</p>
-						    </div>
-
 						  </div>
 
+						  <div class="carousel-cell partners-item">
+						    <div class="partners-img">
+						    	<img src="img/partners/2.png">
+						    </div>
+						  </div>
+
+						  <div class="carousel-cell partners-item">
+						    <div class="partners-img">
+						    	<img src="img/partners/3.png">
+						    </div>
+						  </div>
+
+						  <div class="carousel-cell partners-item">
+						    <div class="partners-img">
+						    	<img src="img/partners/4.png">
+						    </div>
+						  </div>
+						  
+						  <div class="carousel-cell partners-item">
+						    <div class="partners-img">
+						    	<img src="img/partners/5.png">
+						    </div>
+						  </div>
+
+
 						</div>
-						<div class="ver-tabs-img col-md-4 col-xs-12">
-							<img src="img/smile.jpg"/>
-						</div>
 
-					</div>
-				</div>
-
-			</div> <!-- ./CONTAINER -->
-		</div><!-- ./SHORT-ABOUT -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- SHORT-ADVANTAGE -->
-		<div class="row m-v-60">
-			<div class="container">
-
-				
-				<div class="short-advantage inlineble-2">
-
-					<figure data-scroll-animated="800, 1300">
-						<div class="img-content align-center">
-							<img src="img/icons/advantage-1.svg"/>
-						</div>
-						<div class="desc align-center">
-							<p>100% сохранность груза</p>
-						</div>
-					</figure>
-					<figure data-scroll-animated="600, 1300">
-						<div class="img-content align-center">
-							<img src="img/icons/advantage-2.svg"/>
-						</div>
-						<div class="desc align-center">
-							<p>Быстрая доставка</p>
-						</div>
-					</figure>
-					<figure data-scroll-animated="600, 1300">
-						<div class="img-content align-center">
-							<img src="img/icons/advantage-3.svg"/>
-						</div>
-						<div class="desc align-center">
-							<p>Различные виды грузов</p>
-						</div>
-					</figure>
-					<figure data-scroll-animated="800, 1300">
-						<div class="img-content align-center">
-							<img src="img/icons/advantage-4.svg"/>
-						</div>
-						<div class="desc align-center">
-							<p>Надежность</p>
-						</div>
-					</figure>
 				</div>
 
 
-
-			</div> <!-- ./CONTAINER -->
-		</div><!-- ./SHORT-ADVANTAGE -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- SHORT-ABOUT-TEXT -->
-		<div class="row m-v-60">
-			<div class="container">
-
-				
-				<div>
-					<div class="about-text parag-m-t-15 p-v-40 p-h-40">
-						<p>
-							Еще вчера - мы не беспокоились, что нас не знают, но заботились о том, чтобы нас знали.
-							<br/>
-							Уже сегодня наша компания успешно занимается транспортировками грузов из Европы, стран СНГ и Юго-Восточной Азии.
-						</p>
-
-						<p>
-							С каждым днем мы увеличиваем свой опыт в осуществлении транспортировок грузов. Мы верим, что сплоченность нашей команды, профессионализм 
-							и ответственность - непременные условия достижения высоких результатов.
-						</p>
-					</div>
-				</div>
-
-
-			</div> <!-- ./CONTAINER -->
-		</div><!-- ./SHORT-ABOUT-TEXT -->
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- BONUS -->
-		<div class="row m-v-60">
-			<div class="skin-bonus p-v-50" style="background-image: url('img/semi-bg-1.jpg');">
-				<div class="container">
-
-					<div class="align-center color-white">
-						<h2>Получите беспланый расчет тарифа</h2>
-						<button class="btn-blue-1" type="button" data-toggle="modal" data-target="#feedback-modal">
-			  				<b class="clc">Связаться с нами</b>
-			  		</button>
-					</div>
-
-				</div>
-			</div>
-		</div><!-- ./BONUS -->
-		
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- SHORT-CARPARK -->
-		<div class="row m-v-60">
-			<div class="container">
-
-				<h1>Наш Автопарк</h1>
-
-				<div class="inlineble-2 short-carpark">
-
-					<figure class="bg-color-white marg-top-30" data-1600="transform: translate3d(0%, 100%, 0px);" data-2500="transform: translate3d( 0%, 0%, 0px);">
-						<div class="img-content">
-							<img src="img/automobils/automobil-1.jpg"/>
-						</div>
-
-						<div class="desc p-v-30 p-h-15">
-							<b class="display-block p-v-10">
-								<a href="">
-									Самосвал MAN TGS 41.400
-								</a>
-							</b>
-							<p>
-								Создавая эту страничку, мы обещали, 
-								что будем честно сообщать о себе хорошее и плохое. 
-								Так вот, хорошая новость, в январе-феврале мы отгрузили из РФ 11 машин со 
-								сборным грузом и 3 машины с другим груз...
-							</p>
-						</div>
-					</figure>
-					
-
-
-					<figure class="bg-color-white marg-top-30" data-1800="transform: translate3d(0%, 100%, 0px);" data-2500="transform: translate3d( 0%, 0%, 0px);">
-						<div class="img-content">
-							<img src="img/automobils/automobil-2.jpg"/>
-						</div>
-
-						<div class="desc p-v-30 p-h-15">
-							<b class="display-block p-v-10">
-								<a href="">
-									MAN TGS 19.360 Евро 4, MAN TGS 19.400
-								</a>
-							</b>
-							<p>
-								Создавая эту страничку, мы обещали, 
-								что будем честно сообщать о себе хорошее и плохое. 
-								Так вот, хорошая новость, в январе-феврале мы отгрузили из РФ 11 машин со 
-								сборным грузом и 3 машины с другим груз...
-							</p>
-						</div>
-					</figure>
-					
-
-
-					<figure class="bg-color-white marg-top-30" data-1800="transform: translate3d(0%, 100%, 0px);" data-2500="transform: translate3d( 0%, 0%, 0px);">
-						<div class="img-content">
-							<img src="img/automobils/automobil-3.jpg"/>
-						</div>
-
-						<div class="desc p-v-30 p-h-15">
-							<b class="display-block p-v-10">
-								<a href="">
-									Фургоны марки ГБАСПГ ISUZU SAZ NQR  PL
-								</a>
-							</b>
-							<p>
-								Создавая эту страничку, мы обещали, 
-								что будем честно сообщать о себе хорошее и плохое. 
-								Так вот, хорошая новость, в январе-феврале мы отгрузили из РФ 11 машин со 
-								сборным грузом и 3 машины с другим груз...
-							</p>
-						</div>
-					</figure>
-					
-
-
-					<figure class="bg-color-white marg-top-30" data-1600="transform: translate3d(0%, 100%, 0px);" data-2500="transform: translate3d( 0%, 0%, 0px);">
-						<div class="img-content">
-							<img src="img/automobils/automobil-4.jpg"/>
-						</div>
-
-						<div class="desc p-v-30 p-h-15">
-							<b class="display-block p-v-10">
-								<a href="">
-									Результаты работы в январе и феврале
-								</a>
-							</b>
-							<p>
-								Создавая эту страничку, мы обещали, 
-								что будем честно сообщать о себе хорошее и плохое. 
-								Так вот, хорошая новость, в январе-феврале мы отгрузили из РФ 11 машин со 
-								сборным грузом и 3 машины с другим груз...
-							</p>
-						</div>
-					</figure>
-
-
-
-				</div>
-
-			</div><!-- ./CONTAINER -->
-		</div><!-- ./SHORT-CARPARK -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- SHORT-REVIEWS -->
-		<div class="row m-v-60 bg-color-white">
-			<div class="container p-v-30">
-
-				<h1>Отзывы</h1>
-
-				<div class="short-reviews marg-ver-30 p-v-45">
-
-			
-
-					 
-					  <div class="bord">
-					  	<div class="tab-content">
-
-						    <figure role="tabpanel" class="tab-pane fade" id="review-1">
-						    		<img src="img/review-1.jpg" alt=""/>
-
-							    	<aside>
-							    		<b><font size="4">Азизов Ботирбек, </font></b>
-							    		<em>Предприниматель</em>
-							        <p>
-												Руководство замечательное, порядочное и с пониманием относиться ко всему! 
-												Нет ничего трудного,если все во время исполнишь свое обязательство. 
-												Встреча руководства и коллег после дальней командировки. 
-												Нет ничего трудного,если все во время исполнишь свое обязательство. 
-												Встреча руководства и коллег после дальней командировки.
-							        </p>
-							        <p>
-												Руководство замечательное, порядочное и с пониманием относиться ко всему! 
-												Нет ничего трудного,если все во время исполнишь свое обязательство. 
-												Встреча руководства и коллег после дальней командировки. 
-												Нет ничего трудного,если все во время исполнишь свое обязательство. 
-												Встреча руководства и коллег после дальней командировки.
-							        </p>
-
-							      </aside>
-						    </figure>
-
-						    <figure role="tabpanel" class="tab-pane fade in active" id="review-2">
-						    		<img src="img/review-2.jpg" alt=""/>
-
-							    	<aside>
-							    		<b><font size="4">Ботиржонов Азизбек, </font></b>
-							    		<em>Предприниматель</em>
-							        <p>
-												Руководство замечательное, порядочное и с пониманием относиться ко всему! 
-												Нет ничего трудного,если все во время исполнишь свое обязательство. 
-												Встреча руководства и коллег после дальней командировки. 
-												Нет ничего трудного,если все во время исполнишь свое обязательство. 
-												Встреча руководства и коллег после дальней командировки.
-							        </p>
-							      </aside>
-						    </figure>
-
-						    <figure role="tabpanel" class="tab-pane fade" id="review-3">
-						    		<img src="img/review-3.jpg" alt=""/>
-
-							    	<aside>
-							    		<b><font size="4">Авезов Рустам, </font></b>
-							    		<em>Предприниматель</em>
-							        <p>
-												Руководство замечательное, порядочное и с пониманием относиться ко всему! 
-												Нет ничего трудного,если все во время исполнишь свое обязательство.
-							        </p>
-							      </aside>
-						    </figure>
-
-					
-
-
-
-							 	<!-- REVIEWS-TAB PAGINATION -->
-							  <ul class="pagination-red" role="tablist">
-
-							    <li><a href="#review-1" data-toggle="tab"> </a></li>
-							    <li class="active"><a href="#review-2" data-toggle="tab"></a></li>
-							    <li><a href="#review-3" data-toggle="tab"></a></li>
-
-							  </ul>
-
-
-					  	</div><!-- ./TAB-CONTENT -->
-					  </div>
-				
-
-				</div>
-			</div><!-- ./CONTAINER -->
-		</div><!-- ./SHORT-REVIEWS -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- MAP -->
-		<div class="map-content m-t-60">
-
-			<div class="container">
-
-				<div class="col-md-3 map-block bg-color-white">
-
-					<h2>Контакты</h2>
-					<address>
-						<h4>Адрес</h4>
-							Республика Узбекистан, г.Ташкент, Яшнабадский район,<br>
-							ул. Уйсозлар, 23 А
-
-						<h4>Телефон</h4>
-						<p>+99871 280 24 97<br/>
-							 +99871 280 32 34</p>
-
-						<h4>Email</h4>
-						<a href="mailto:manlogistic777@gmail.com">
-							manlogistic777@gmail.com</a>
-
-					</address>
-				</div>
 
 			</div>
-			<div id="map" class="row"></div>
-			<script>
 
-			var i = {
-							// GOOGLE MAP INIT
-							gm_content: '<h3><a  href="index.html" ><img src="img/logo.png"/></a></h3>'+
-											'<p>Республика Узбекистан, г.Ташкент, Яшнабадский район, ул. Уйсозлар, 23 А</p>'+
-											'<p><strong>Телефоны:</strong></p>'+
-											'<p>+99871 280 24 97<br>+99871 280 24 97</p>'+
-											'<p><strong>E-mail:</strong></p>'+
-											'<p>manlogistic777@gmail.com</p>',
+		</div>
+	</div>
 
-							gm_title : 								'Мы',
-							gm_icon: 									"img/icons/marker.png",
 
-							gm_marker_position_lat:  	41.2579352,
-							gm_marker_position_lng:  	69.3347696,
 
-							gm_position_lat: 			 		41.2579352,
-							gm_position_lng: 				 	69.3347696
-					}
 
-			var mapBlock = document.getElementsByClassName("map-block")[0];
 
-		   	function initMap() {
-						var map = new google.maps.Map(document.getElementById('map'), {
-								zoom: 15,
-								center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
-								disableDefaultUI: true,
-								mapTypeId: 'terrain',
-								styles: [
-									{elementType: 'geometry', stylers: [{color: '#ececec'}]},
-									{elementType: 'labels.text.fill', stylers: [{color: '#797979'}]},
-									{elementType: 'labels.text.stroke', stylers: [{color: '#ffffff'}]},
-									{
-										featureType: 'landscape.natural',
-										elementType: 'geometry',
-										stylers: [{color: '#f7f7f7'}]
-									},
-									{
-										featureType: 'poi',
-										elementType: 'geometry',
-										stylers: [{color: '#f7f7f7'}]
-									},
-									{
-										featureType: 'poi.park',
-										elementType: 'geometry.fill',
-										stylers: [{color: '#e5e5e5'}]
-									},
-									{
-										featureType: 'road',
-										elementType: 'geometry',
-										stylers: [{color: '#ffffff'}]
-									},
-									{
-										featureType: 'road.local',
-										elementType: 'labels.text.fill',
-										stylers: [{color: '#806b63'}]
-									},
-									{
-										featureType: 'transit.line',
-										elementType: 'geometry',
-										stylers: [{color: '#f7f7f7'}]
-									},
-									{
-										featureType: 'transit.line',
-										elementType: 'labels.text.fill',
-										stylers: [{color: '#ffffff'}]
-									},
-									{
-										featureType: 'transit.line',
-										elementType: 'labels.text.stroke',
-										stylers: [{color: '#ffffff'}]
-									},
-									{
-										featureType: 'transit.station',
-										elementType: 'all',
-										stylers: [{visibility: 'off'}]
-									},
-									{
-										featureType: 'water',
-										elementType: 'geometry.fill',
-										stylers: [{color: '#ececec'}]
-									}
-								]
-						});
-						var marker = new google.maps.Marker({
-							position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
-							map: map,
-							icon: i.gm_icon,
-							title: i.gm_title
-						});
-						var infoWindow = new google.maps.InfoWindow({
-							content: i.gm_content,
-							maxWidth: "400"
-						});
-						var gm_status = false;
-						marker.addListener('click', function(){
 
-							if (gm_status){
-								infoWindow.open(map, marker);
-								$(function(){ if($( document ).width() > 991) $(mapBlock).slideUp(); });
-								gm_status = !gm_status;
-							}else{
-								$(function(){ if($( document ).width() > 991) $(mapBlock).slideDown(); });
-								infoWindow.close(map, marker);
-								gm_status = !gm_status;
-							}
 
-						});
-							if (gm_status){
-								infoWindow.open(map, marker);
-								$(function(){ if($( document ).width() > 991) $(mapBlock).slideUp(); });
-								gm_status = !gm_status;
-							}else{
-								$(function(){ if($( document ).width() > 991) $(mapBlock).slideDown(); });
-								infoWindow.close(map, marker);
-								gm_status = !gm_status;
-							}
 
-					}//initMap end
 
-			  </script>
-				<script async defer
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
-				</script>
-				</div>
-			</div>
-		</div><!-- ./MAP -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1193,76 +758,316 @@
 
 	<!-- FOOTER -->
 	<footer id="footer" class="container-fluid">
-		<div class="skin-1">
-			<div class="container">
-
-				<div class="col-xs-12 footer-menu hidden-xs">
-					<ul>
-						<li><a href="about.html">О нас</a></li>
-						<li><a href="services.html">Услуги</a></li>
-						<li><a href="ourcars.html">Наше авто</a></li>
-						<li><a href="reviews.html">Отзывы</a></li>
-						<li><a href="contacts.html">Контакты</a></li>
-					</ul>
-				</div>
-
-				<div class="col-xs-12 footer-logo">
-					<div class="f-logo">
-						<img src="img/footer-logo.png" />
-					</div>
-				</div>
-
-			</div>
-		</div>
+		<div class="container">
+				
 
 
+			<div class="footer-content">
 
 
-		<div class="skin-2">
-			<div class="container">
-
-				<div class="col-xs-12 footer-info">
-					<div class="col-md-6 copyright">
-
+				<div class="sec-1 col-md-3 parag-m-v-15">
+					<div class="footer-phones">
+						<p class="text-style-1">Наши телефоны:<br></p>
 						<p>
-							<a href="https://www.life-style.uz" 
-									title="Создание и продвижение сайтов в Ташкенте"
-									style="text-decoration: underline;">Создание сайтов</a> 
-
-									<em><font color="skyblue">Life</font></em>
-
-									<font color="ghostwhite">Style</font>
+							(+998 71) 777-44-99<br>
+							(+998 71) 777-99-44<br>
+							(+998 93) 588-24-40<br>
+							(+998 93) 588-24-41
 						</p>
 					</div>
-				
-					<div class="col-md-6 social">
-						<ul>
-							<li><a href=""><i class="fa fa-facebook"></i></a></li>
-							<li><a href=""><i class="fa fa-linkedin"></i></a></li>
-							<li><a href=""><i class="fa fa-instagram"></i></a></li>
-							<li><a href=""><i class="fa fa-telegram"></i></a></li>
-						</ul>
+					<div class="footer-email">
+						<p class="text-style-1">E-mail:<br></p>
+						<p>
+							cityrender@sh.uz<br>
+							cityrender@gmail.com
+						</p>
 					</div>
 				</div>
 
+				<div class="sec-2 col-md-4 parag-m-v-15">
+					<div class="footer-address">
+						<p class="text-style-1">Наш адрес:<br></p>
+						<address>
+							Узбекистан, г. Ташкент <br>
+							ул.Амира Темура, 1 проезд д.6 <br>
+							здание АО "Тошшахартрансхизмат"<br>
+							(ориентир Главпочтамт)
+						</address>
+					</div>
+					<div class="footer-copy p-v-30 link-hover">
+						<p>
+							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
+									Создание сайтов
+							</a> 
+							<em><font color="#d5ac1d" face="sans-serif">Life</font></em>
+							<font color="ghostwhite">Style</font>
+						</p>
+					</div>
+				</div>
+
+
+				<div class="sec-3 col-md-2 m-v-10 link-hover">
+					<div class="footer-menu">
+		        <ul class="footer-menu-list">
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="portfolio.html">Портфолио</a></li>
+							<li><a href="services.html">Улуги</a></li>
+							<li><a href="3dtour.html">3D Тур</a></li>
+							<li><a href="partners.html">Наши партнеры</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
+					  </ul>
+					</div>
+					<div class="footer-feedback p-v-30">
+						<a role="button" data-toggle="modal" data-target="#feedback-modal-1">
+							<span class="text-style-1">Обратная связь</span>
+						</a>
+					</div>
+				</div>
+
+				<div class="sec-4 col-md-3 parag-m-v-15 m-v-30">
+					<div class="footer-search">
+							<form method="POST" action="" id="footer-form-search">
+
+								<span class="input input--ruri span-search">
+									<button type="submit" class="btn-res" form="footer-form-search" autofocus="autofocus">
+										<i class="fa fa-search"></i>
+									</button>
+									<input class="input__field input__field--ruri" 
+												 form="footer-form-search"
+												 type="text"
+												 minlength="3"
+												 id="input-1" 
+												 name="search"
+												 autocomplete="off" 
+												 required="required"/>
+
+									<label class="input__label input__label--ruri" for="input-1">
+										<span class="input__label-content input__label-content--ruri">Поиск по сайту</span>
+									</label>
+
+								</span>
+
+	            </form>
+					</div>
+
+					<div class="footer-social float-right m-v-30">
+						<p class="text-style-1">Мы в социальных сетях<br></p>
+						<ul>
+							<li><a href=""><i class="icomoon icon-telegram"></i></a></li>
+							<li><a href=""><i class="icomoon icon-social-facebook-circular-button"></i></a></li>
+							<li><a href=""><i class="icomoon icon-instagram"></i></a></li>
+						</ul>
+							<a href=""></a>
+						</p>
+					</div>
+				</div>
+
+
 			</div>
+
+		
+
+
+
 		</div>
 	</footer>
 	
 
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal fade animated" id="feedback-modal-1" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h3>Связаться с нами</h3>
+					<form id="feedback-contacts" method="post" action="" class="contact-form">
+
+
+
+						<!-- NAME -->
+						<span class="input input--nariko input-name">
+							<input class="input__field input__field--nariko" 
+										 form="feedback-contacts"
+										 type="text" 
+										 id="input-1" 
+										 name="name"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-1">
+								<span class="input__label-content input__label-content--nariko">Имя</span>
+							</label>
+						</span>
+						<br>
+
+						<!-- EMAIL -->
+						<span class="input input--nariko input-email">
+
+							<input class="input__field input__field--nariko" 
+										 form="feedback-contacts"
+										 type="email" 
+										 id="input-2" 
+										 name="email"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-2">
+								<span class="input__label-content input__label-content--nariko">Электронная почта</span>
+							</label>
+
+						</span>
+
+						<br>
+						<!-- TEL -->
+						<span class="input input--nariko input-phone">
+
+							<input class="input__field input__field--nariko" 
+										 form="feedback-contacts"
+										 type="tel" 
+										 id="input-3" 
+										 name="tel"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-3">
+								<span class="input__label-content input__label-content--nariko">Номер телефона</span>
+							</label>
+
+						</span>
+						<br>
+						<!-- MESSAGE -->
+						<span class="textarea">
+							<label class="" for="textarea-4">
+								<span class="">Сообщение</span>
+							</label>
+							<textarea class="" 
+										 style="resize: none;"
+										 id="textarea-4"
+										 form="feedback-contacts"
+										 type="text" 
+										 name="message"
+										 autocomplete="off" 
+										 required="required"></textarea>
+
+
+
+						</span>
+
+						<div class="form-footer">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
+			      		<b>Отправить</b>
+			      	</button>
+			      </div>
+
+
+					</form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
 
 
 
+		<!-- SCRIPTS -->
+		<script src="js/scripts.min.js"></script>
+		<script src="js/main.js"></script>
+		
+		<!-- jQuery REVOLUTION Slider  -->
+		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+		<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+
+ 
+
+		<script>
+		/**
+			REVOLUTION Slider
+		*/
+			  $(function() {
+			  	
+			    $('.rev-slider').revolution({
+						delay:9000,
+						startwidth: $( window ).width(),
+						startheight: 610,
+						autoHeight:"off",
+						fullScreenAlignForce:"off",
+
+						onHoverStop:"on",
+
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:3,
+
+						hideThumbsOnMobile:"off",
+						hideBulletsOnMobile:"on",
+						hideArrowsOnMobile:"off",
+						hideThumbsUnderResoluition:0,
+
+						hideThumbs:-1,
+						hideTimerBar:"on",
+
+						keyboardNavigation:"off",
+
+						navigationType:"bullet",
+						navigationArrows:"small",
+						navigationStyle:"round",
+
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset: 0,
+						navigationVOffset:-30,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
 
 
+						touchenabled:"on",
+						swipe_velocity:"0.7",
+						swipe_max_touches:"1",
+						swipe_min_touches:"1",
+						drag_block_vertical:"false",
 
+						stopAtSlide:-1,
+						stopAfterLoops:-1,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						hideSliderAtLimit:0,
 
+						fullWidth:"on",
+						fullScreen:"off",
+						fullScreenOffsetContainer: "",
 
+						dottedOverlay:"none",
+						forceFullWidth:"off",
 
+			      shadow:0
+			 
 
+			    });
 
+			 	});
+			</script>
 
+</div> 
 </body>
 </html>

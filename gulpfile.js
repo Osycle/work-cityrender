@@ -48,12 +48,16 @@ gulp.task('scripts', () =>
 			'app/js/jquery.min.js',
 			'app/js/smoothscroll.js',
 			'app/js/bootstrap.js',
+			'app/js/TweenMax.min.js',
+			'app/js/EasePack.min.js',
 			//'app/js/jquery.fractionslider.js',
 			//'app/js/classie.js',
 			//'app/js/skrollr.min.js',
-			'app/js/aos.js',
+			//'app/js/aos.js',
+			//'app/js/owl.carousel.min.js',
+			'app/js/skrollr.min.js',
+			'app/js/classie.js',
 			'app/js/wow.js',
-			'app/js/owl.carousel.min.js',
 			'app/js/flickity.js'
 		])
 		.pipe( concat('scripts.min.js') )
@@ -68,7 +72,7 @@ gulp.task('cssnano', ['sass'], () =>
 		return gulp.src('app/css/main.css')
 		.pipe( cssnano({ reduceIdents :  false }) )
 		.pipe(rename({suffix: '.min'}) )
-		.pipe( gulp.dest('dist/css/') ); // app/css default
+		.pipe( gulp.dest('app/css/') ); // app/css default
 	}
 );
 
