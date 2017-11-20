@@ -961,35 +961,9 @@ $header-height: 50px;
 
 //MINI MENU
 .min-menu{
-	 z-index: 100;
-   position: relative;
-	.hamburger{
-		
-		i, i:after, i:before{
-			background-color: $color_1;
-		}
-		text{
-			open, close{
-				color: $color_1;
-			}
-		}
-	}
-	a:not([href]){
-		//text-align: ;
-	}
-	.sub-menu-1{
-		li{
-			a{
-				padding: 0 15px;
-				font-size: 1em;}
-		}
-	}
+	 z-index: 2100;
+	 position: relative;
 }
-.drawer-list{
-	z-index: 1;
-}
-
-
 
 
 
@@ -1717,7 +1691,9 @@ main{
 }
 
 
-
+.skin-header-footer, footer, .index-slider, main{
+	display: none ;
+}
 
 
 

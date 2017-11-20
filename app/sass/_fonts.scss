@@ -17,16 +17,15 @@ $path: "../fonts";
 // ICOMOON
 
 @font-face {
-  font-family: 'icomoon'; 
-  src:  url($path+'/icomoon.eot?zcvjmw');
-  src:  url($path+'/icomoon.eot?zcvjmw#iefix') format('embedded-opentype'),
-    url($path+'/icomoon.ttf?zcvjmw') format('truetype'),
-    url($path+'/icomoon.woff?zcvjmw') format('woff'),
-    url($path+'/icomoon.svg?zcvjmw#icomoon') format('svg');
+  font-family: 'icomoon';
+  src:  url($path+'/icomoon.eot?sz7m3f');
+  src:  url($path+'/icomoon.eot?sz7m3f#iefix') format('embedded-opentype'),
+    url($path+'/icomoon.ttf?sz7m3f') format('truetype'),
+    url($path+'/icomoon.woff?sz7m3f') format('woff'),
+    url($path+'/icomoon.svg?sz7m3f#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
-
 
 @font-face {
     font-family: 'intro';
