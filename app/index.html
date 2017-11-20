@@ -47,7 +47,7 @@
 
 	<header id="header" class="header-scroll">
 		<!-- HEADER TOP -->
-		<div class="skin-header-top ">
+		<div class="skin-header-top hidden-sm hidden-xs">
 			<div class="container">
 				<!-- HEADER NAVBAR -->
 				<div class="header-navbar">
@@ -55,7 +55,7 @@
 					<div class="p-0">
 
 
-						<div class="slogan hidden-sm hidden-xs">
+						<div class="slogan">
 							<span>
 								<text class="color-1">Стильный дизайн</text><br>
 								<font face='Arial' size="2">Интерьер, экстерьер, ландшафт</font>
@@ -92,7 +92,7 @@
 
 
      <!-- HEADER BOTTOM -->
-		<div class="skin-header-footer ">
+		<div class="skin-header-footer hidden-sm hidden-xs">
       <div class="container">
 
 	      <!-- MAIN NAVBAR -->
@@ -172,17 +172,145 @@
 
 
 
+	<!-- FEEDBACK MODAL-->
+	<div class="feedback-modal modal fade animated" id="feedback-modal-1" tabindex="-1" role="dialog" aria-labelledby="feedback">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+
+	    	<button type="button" class="btn" data-dismiss="modal">
+	    		<span class="icon-bar"></span>
+	    		<span class="icon-bar"></span>
+	    	</button>
+
+	      <div class="modal-body">
+
+
+					<div class="col-md-12 success-info">
+						<div id="success-message"></div>
+						<div id="fail-message"></div>
+					</div>
+					<h3>Связаться с нами</h3>
+					<form id="feedback-contacts" method="post" action="" class="contact-form">
+
+
+
+						<!-- NAME -->
+						<span class="input input--nariko input-name">
+							<input class="input__field input__field--nariko" 
+										 form="feedback-contacts"
+										 type="text" 
+										 id="input-1" 
+										 name="name"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-1">
+								<span class="input__label-content input__label-content--nariko">Имя</span>
+							</label>
+						</span>
+						<br>
+
+						<!-- EMAIL -->
+						<span class="input input--nariko input-email">
+
+							<input class="input__field input__field--nariko" 
+										 form="feedback-contacts"
+										 type="email" 
+										 id="input-2" 
+										 name="email"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-2">
+								<span class="input__label-content input__label-content--nariko">Электронная почта</span>
+							</label>
+
+						</span>
+
+						<br>
+						<!-- TEL -->
+						<span class="input input--nariko input-phone">
+
+							<input class="input__field input__field--nariko" 
+										 form="feedback-contacts"
+										 type="tel" 
+										 id="input-3" 
+										 name="tel"
+										 autocomplete="off" 
+										 required="required"/>
+
+							<label class="input__label input__label--nariko" for="input-3">
+								<span class="input__label-content input__label-content--nariko">Номер телефона</span>
+							</label>
+
+						</span>
+						<br>
+						<!-- MESSAGE -->
+						<span class="textarea">
+							<label class="" for="textarea-4">
+								<span class="">Сообщение</span>
+							</label>
+							<textarea class="" 
+										 style="resize: none;"
+										 id="textarea-4"
+										 form="feedback-contacts"
+										 type="text" 
+										 name="message"
+										 autocomplete="off" 
+										 required="required"></textarea>
+
+
+
+						</span>
+
+						<div class="form-footer">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
+			      		<b>Отправить</b>
+			      	</button>
+			      </div>
+
+
+					</form>
+
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<!-- REV SLIDER -->
 
 	<div class="index-slider">
-		<div class="fullscreen-container">
+		<div class="fullscreen-container" data-0="transform: translate3d(0%, -10%, 0px);" data-750="transform: translate3d( 0%, 10%, 0px);">
 			<hr class="line-shadow-1">
-			<div class="rev-lider" >
+			<div class="rev-slider" >
 				<ul>
 
 					<!-- SLIDE -->
 					<li class="slide-1" 
-							data-transition="papercut"
+							data-transition="3dcurtain-horizontal"
 							data-masterspeed="2000">
 
 						<img src="img/slider/slide-1.jpg">
@@ -193,7 +321,7 @@
 									 data-voffset="75"
 									 data-hoffset="100"
 									 data-speed="1300"
-									 data-start="1000" 
+									 data-start="800" 
 									 data-easing="easeOutBack">
 
 									<h1  class="tp-caption randomrotate start splitted" 
@@ -202,7 +330,7 @@
 											 data-endelementdelay="0.03"
 											 data-splitin="lines" 
 										 	 data-splitout="lines" 
-											 data-start="1700" 
+											 data-start="900" 
 											 data-easing="easeOutBack">
 											 Дизайн<br>
 											 интерьеров
@@ -231,7 +359,7 @@
 								 data-hoffset="0" 
 								 data-speed="700"
 								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="3000">
+								 data-start="3300">
 								<b class="btn-default">
 									<a href="services-in.html">Перейти в раздел</a>
 								</b>
@@ -242,7 +370,7 @@
 
 					<!-- SLIDE -->
 					<li class="slide-2" 
-							data-transition="papercut"
+							data-transition="3dcurtain-horizontal"
 							data-masterspeed="2000">
 
 						<img src="img/slider/slide-2.jpg">
@@ -253,7 +381,7 @@
 									 data-voffset="75"
 									 data-hoffset="100"
 									 data-speed="1300"
-									 data-start="1000" 
+									 data-start="800" 
 									 data-easing="easeOutBack">
 
 									<h1  class="tp-caption randomrotate start splitted" 
@@ -262,7 +390,7 @@
 											 data-endelementdelay="0.03"
 											 data-splitin="lines" 
 										 	 data-splitout="lines" 
-											 data-start="1700" 
+											 data-start="900" 
 											 data-easing="easeOutBack">
 											 Живопись и<br>
 											 декор
@@ -291,20 +419,17 @@
 								 data-hoffset="0" 
 								 data-speed="700"
 								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="3000">
+								 data-start="3300">
 								<b class="btn-default">
 									<a href="services-in.html">Перейти в раздел</a>
 								</b>
 						</div>
 					</li>
-
-
-
-
+					
 
 					<!-- SLIDE -->
 					<li class="slide-3" 
-							data-transition="papercut"
+							data-transition="3dcurtain-horizontal"
 							data-masterspeed="2000">
 
 						<img src="img/slider/slide-3.jpg">
@@ -315,7 +440,7 @@
 									 data-voffset="75"
 									 data-hoffset="100"
 									 data-speed="1300"
-									 data-start="1000" 
+									 data-start="800" 
 									 data-easing="easeOutBack">
 
 									<h1  class="tp-caption randomrotate start splitted" 
@@ -324,10 +449,10 @@
 											 data-endelementdelay="0.03"
 											 data-splitin="lines" 
 										 	 data-splitout="lines" 
-											 data-start="1500" 
+											 data-start="900" 
 											 data-easing="easeOutBack">
-											 Дизайн<br>
-											 интерьеров
+											 Живопись и<br>
+											 декор
 									</h1>
 
 									<p  class="tp-caption randomrotate start splitted" 
@@ -353,12 +478,15 @@
 								 data-hoffset="0" 
 								 data-speed="700"
 								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="3000">
+								 data-start="3300">
 								<b class="btn-default">
 									<a href="services-in.html">Перейти в раздел</a>
 								</b>
 						</div>
 					</li>
+
+
+
 
 				
 
@@ -427,14 +555,14 @@
 
 
 
-		<div class="row short-services m-v-60">
+		<div class="row short-services align-center-sm m-v-60">
 			<div class="container">
 
 
-
+				<hr class="line-shadow-1">
 				<div class="services-list col-md-3">
 
-					<div class="sm-align-center">
+					<div class="align-center-sm">
 						<ul>
 							<li><a href=""><i class="icomoon icon-blueprint"></i>Дизайн интерьера</a></li>
 							<li><a href=""><i class="icomoon icon-building"></i>Дизайн экстерьера</a></li>
@@ -515,13 +643,13 @@
 
 
 
-		<div class="row short-news m-v-60">
+		<div class="row short-news align-center-sm m-v-60">
 			<div class="container">
 
 				<div class="col-xs-12">
 					
+					<hr class="line-shadow-1">
 					<div class="short-news-header col-md-3">
-						<hr class="line-shadow-1">
 						<h1>Новости и события</h1>
 					</div>
 
@@ -601,7 +729,7 @@
 				</div>
 
 			</div>
-			<div class="m-t-20 content-img-sofa" data-1500="transform: translate3d(0%, 100%, 0px);" data-2600="transform: translate3d( 0%, 0%, 0px);">
+			<div class="m-t-20 content-img-sofa" data-1700="transform: translate3d(0%, 100%, 0px);" data-2600="transform: translate3d( 0%, 0%, 0px);">
 				<img src="img/sofa.png"/>
 			</div>
 		</div>
@@ -645,7 +773,7 @@
 
 
 
-	<div class="row short-partners">
+	<div class="row short-partners align-center-sm">
 		<div class="container">
 
 			<div class="short-partners-content">
@@ -752,7 +880,7 @@
 
 
 	<!-- FOOTER -->
-	<footer id="footer" class="container-fluid">
+	<footer id="footer" class="container-fluid align-center-sm">
 		<div class="container">
 				
 
@@ -801,7 +929,7 @@
 				</div>
 
 
-				<div class="sec-3 col-md-2 m-v-10 link-hover">
+				<div class="sec-3 col-md-2 m-v-10 link-hover hidden-xs hidden-sm">
 					<div class="footer-menu">
 		        <ul class="footer-menu-list">
 							<li><a href="about.html">О нас</a></li>
@@ -818,6 +946,8 @@
 						</a>
 					</div>
 				</div>
+
+
 
 				<div class="sec-4 col-md-3 parag-m-v-15 m-v-30">
 					<div class="footer-search">
@@ -845,11 +975,11 @@
 	            </form>
 					</div>
 
-					<div class="footer-social float-right m-v-30">
+					<div class="footer-social float-right-md m-v-30">
 						<p class="text-style-1">Мы в социальных сетях<br></p>
 						<ul>
 							<li><a href=""><i class="icomoon icon-telegram"></i></a></li>
-							<li><a href=""><i class="icomoon icon-social-facebook-circular-button"></i></a></li>
+							<li><a href=""><i class="icomoon icon-facebook"></i></a></li>
 							<li><a href=""><i class="icomoon icon-instagram"></i></a></li>
 						</ul>
 							<a href=""></a>
@@ -868,110 +998,6 @@
 	</footer>
 	
 
-	<!-- FEEDBACK MODAL-->
-	<div class="feedback-modal modal fade animated" id="feedback-modal-1" tabindex="-1" role="dialog" aria-labelledby="feedback">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-
-	    	<button type="button" class="btn" data-dismiss="modal">
-	    		<span class="icon-bar"></span>
-	    		<span class="icon-bar"></span>
-	    	</button>
-
-	      <div class="modal-body">
-
-
-					<div class="col-md-12 success-info">
-						<div id="success-message"></div>
-						<div id="fail-message"></div>
-					</div>
-					<h3>Связаться с нами</h3>
-					<form id="feedback-contacts" method="post" action="" class="contact-form">
-
-
-
-						<!-- NAME -->
-						<span class="input input--nariko input-name">
-							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
-										 type="text" 
-										 id="input-1" 
-										 name="name"
-										 autocomplete="off" 
-										 required="required"/>
-
-							<label class="input__label input__label--nariko" for="input-1">
-								<span class="input__label-content input__label-content--nariko">Имя</span>
-							</label>
-						</span>
-						<br>
-
-						<!-- EMAIL -->
-						<span class="input input--nariko input-email">
-
-							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
-										 type="email" 
-										 id="input-2" 
-										 name="email"
-										 autocomplete="off" 
-										 required="required"/>
-
-							<label class="input__label input__label--nariko" for="input-2">
-								<span class="input__label-content input__label-content--nariko">Электронная почта</span>
-							</label>
-
-						</span>
-
-						<br>
-						<!-- TEL -->
-						<span class="input input--nariko input-phone">
-
-							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
-										 type="tel" 
-										 id="input-3" 
-										 name="tel"
-										 autocomplete="off" 
-										 required="required"/>
-
-							<label class="input__label input__label--nariko" for="input-3">
-								<span class="input__label-content input__label-content--nariko">Номер телефона</span>
-							</label>
-
-						</span>
-						<br>
-						<!-- MESSAGE -->
-						<span class="textarea">
-							<label class="" for="textarea-4">
-								<span class="">Сообщение</span>
-							</label>
-							<textarea class="" 
-										 style="resize: none;"
-										 id="textarea-4"
-										 form="feedback-contacts"
-										 type="text" 
-										 name="message"
-										 autocomplete="off" 
-										 required="required"></textarea>
-
-
-
-						</span>
-
-						<div class="form-footer">
-			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
-			      		<b>Отправить</b>
-			      	</button>
-			      </div>
-
-
-					</form>
-
-	      </div>
-	    </div>
-	  </div>
-	</div>
 
 
 

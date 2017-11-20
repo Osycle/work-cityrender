@@ -523,6 +523,7 @@ button:hover, button:focus{
 	@extend .btn-style;
 	@extend .btn-anima;
 	background-color: $color_1;
+
 }
 .btn-opacity{
 	@extend .btn-style;
@@ -801,6 +802,7 @@ $header-height: 50px;
   $color: white;
 	a{
 		color: $color;
+
 		position: relative;
 		display: block;
 		z-index: 1;
@@ -808,6 +810,7 @@ $header-height: 50px;
 	.menu-list{
 		@extend .clearfix;
 		display: inline-block;
+		padding-bottom: 30px;
 		color: $color;
 		& > li {
 			transition: all 0.3s ease-in-out;
@@ -979,8 +982,13 @@ $header-height: 50px;
 
 // MODAL
 .modal-dialog{
-	width: 40%;
-  margin: 50px 30% !important;
+		width: 400px;
+   // margin: 50px 50wv;
+		@media only screen and (max-width: 767px){
+			width: 80%;
+			margin: 50px auto;
+		}
+	
 	.btn{
 		background-color: transparent;
 		position: relative;
@@ -1124,14 +1132,20 @@ $header-height: 50px;
 
 
 	}
+
 	.modal-content{
 		color: $color_1;
-		@include modal-center(450px, 10%);
+		@include modal-center(400px, 5%);
 		margin-top: 15px;
 
 		@media only screen and (max-width: 991px){
-			@include modal-center(300px, 10%);
+			@include modal-center(350px, 10%);
 		}
+		
+		@media only screen and (max-width: 767px){
+			@include modal-center(300px, 5%);
+		}
+
 
 	}
 	.modal-body{
@@ -1374,7 +1388,7 @@ main{
 
 //--------------------------INDEX
 
-
+//TEST
 .iconcity{
 	width: 100px;
 	 &:hover{
@@ -1411,7 +1425,9 @@ main{
 		height: 100%;
 	}
 }
-
+footer, .short-news, .short-services, .short-partners{
+	display: none;
+}
 
 
 
@@ -1494,14 +1510,14 @@ main{
 	}
 }//end
 .line-shadow-1{
-  box-shadow: 0 0px 40px 20px black;
+  box-shadow: 0px 2px 50px 16px black;
   z-index: 500;
   position: relative;
   border: 0;
 }
 .line-shadow-2{
-  box-shadow: 0 -20px 40px 20px black;
-  z-index: 30;
+  box-shadow: 0px -5px 40px 20px black;
+  z-index: 300;
   position: relative;
   border: 0;
 }
@@ -1691,9 +1707,7 @@ main{
 }
 
 
-.skin-header-footer, footer, .index-slider, main{
-	display: none ;
-}
+
 
 
 
@@ -1814,6 +1828,7 @@ main{
 	}
 	.footer-search{
 		color: white;
+		//overflow: hidden;
 		button[type="submit"]{
 			float: right;
 			font-size: 1.5em;
@@ -1826,6 +1841,8 @@ main{
 			border-radius: 10px ;
 			border: 1px solid rgba(white, 0.75);
 			width: 100%;
+			margin-left: 0;
+			margin-right:0 ;
 			height: 35px;
 			input{
 				top: -100%;

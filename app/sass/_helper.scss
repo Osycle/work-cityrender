@@ -337,13 +337,44 @@
 
 @media (max-width: 991px){
 
-	.sm-align-left{
+
+	.float-left-sm{
+		float: left;
+	}
+	.float-none-sm{
+		float: none;
+	}
+	.float-right-sm{
+		float: right;
+	}
+	.float-none-sm-impt{
+		float: none !important;
+	}
+	.float-left-sm-impt{
+		float: left !important;
+	}
+	.float-right-sm-impt{
+		float: right !important;
+	}
+
+
+	.align-left-sm{
+		text-align: left ;
+	}
+	.align-center-sm{
+		text-align: center ;
+	}
+	.align-right-sm{
+		text-align: right ;
+	}
+
+	.align-left-sm-impt{
 		text-align: left !important;
 	}
-	.sm-align-center{
+	.align-center-sm-impt{
 		text-align: center !important;
 	}
-	.sm-align-right{
+	.align-right-sm-impt{
 		text-align: right !important;
 	}
 
@@ -353,19 +384,43 @@
 
 @media (min-width: 992px){
 
-	.md-float-left{
+	.float-left-md{
 		float: left;
 	}
-	.md-float-right{
+	.float-none-md{
+		float: none;
+	}
+	.float-right-md{
 		float: right;
 	}
-	.md-align-left{
+	.float-none-md-impt{
+		float: none !important;
+	}
+	.float-left-md-impt{
+		float: left !important;
+	}
+
+	.float-right-md-impt{
+		float: right !important;
+	}
+
+
+	.align-left-md{
+		text-align: left ;
+	}
+	.align-center-md{
+		text-align: center ;
+	}
+	.align-right-md{
+		text-align: right ;
+	}
+	.align-left-md-impt{
 		text-align: left !important;
 	}
-	.md-align-center{
+	.align-center-md-impt{
 		text-align: center !important;
 	}
-	.md-align-right{
+	.align-right-md-impt{
 		text-align: right !important;
 	}
 	
