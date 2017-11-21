@@ -192,25 +192,56 @@ $(function(){
 
 
 
-//RESIZE
-$( window ).on("resize", function(e){});
+	//RESIZE
+	$( window ).on("resize", function(e){});
 
-//SCROLL
-var header_status = false;
-$( window ).on("scroll", function(e){
-	if($(window).scrollTop() > 300 && header_status == false){
-		header_status = true; 
-	}else if($(window).scrollTop() < 300 && header_status == true){
-		header_status = false;
+	//SCROLL
+	var header_status = false;
+	$( window ).on("scroll", function(e){
+		if($(window).scrollTop() > 300 && header_status == false){
+			header_status = true; 
+		}else if($(window).scrollTop() < 300 && header_status == true){
+			header_status = false;
+		}
+	});
+
+
+
+
+
+	var images = 						 		document.images,
+			imagesTotalCount = 			images.length,
+			imagesLoadedCount = 		0,
+			preloadPercent = 		 $(".percent");
+
+	for ( var i = 0; i < imagesTotalCount ; i++ ) {
+		var image_clone = new Image();
+				image_clone.onload = 		image_loaded;
+				image_clone.onerror = 	image_loaded;
+				image_clone.src = 			images[i].src;
+
 	}
-});
 
+	function image_loaded (){
+		imagesLoadedCount++;
 
+		var per = ( ( 100 / imagesTotalCount ) * imagesLoadedCount ) << 0 ;
+		var ser = ( ( 400 * Math.PI / imagesTotalCount ) * imagesLoadedCount ) << 0 ;
 
+		setTimeout( function(){
+			$(preloadPercent).text(  per +  "%"); 
+		}, 220)
 
+		$(".logo-circle-1").eq(0).css("stroke-dasharray", ser).css("stroke-width", 3);
 
+		if ( imagesLoadedCount >= imagesTotalCount )
 
+			setTimeout( function (){
+				$(".preloader").slideToggle();
+				$( "body" ).css("overflow-y", "auto");
+			}, 600)
 
+	}
 
 
 
@@ -224,9 +255,6 @@ $( window ).on("scroll", function(e){
 
 	});
 }) (jQuery);
-
-
-
 
 
 
