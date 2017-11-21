@@ -26,12 +26,25 @@
 		font-size: 14px;
 	}
 
-
+	.logo{
+		img{
+			width: 100px;
+		}
+	}
+	.header-navbar, .menu-toggle{
+		//@include table-celling( 120px );
+		//width: inherit;
+	}
 
 	.services-list{
+		.icomoon {
+			padding-right: 0;
+			padding-left: 50px;
+			float: left;
+		}
 		li{
 			  display: inline-block;
-    		width: 43%;
+    		width: 49.5%;
     		text-align: center;
     		padding: 0 2%;
     		&:nth-child(odd){
@@ -46,6 +59,13 @@
 
 	#footer{
 		
+		.footer-content{
+			display: block;
+		}
+
+		.input{
+			max-width: fit-content;
+		}
 
 	}
 
@@ -66,7 +86,22 @@
 	html body{
 		font-size: 13px;
 	}
-
+	.slide-header{
+		left: 0 !important;
+		top: 25% !important;
+		max-width: 100%  !important;
+		width: 100%  !important;
+	}
+	.services-list{
+		li{
+			width: 50%;
+		}
+		.icomoon {
+			padding-right: 10px;
+			padding-left: 0;
+			float: left;
+		}
+	}
 	main{
 
 
@@ -116,7 +151,11 @@
 }
 
 
-
+@media (max-width: 280px) {
+	#footer{
+		display: none;
+	}
+}
 
 
 
