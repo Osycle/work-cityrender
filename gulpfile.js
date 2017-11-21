@@ -51,13 +51,15 @@ gulp.task('scripts', () =>
 			'app/js/TweenMax.min.js',
 			'app/js/EasePack.min.js',
 			//'app/js/jquery.fractionslider.js',
-			//'app/js/classie.js',
 			//'app/js/skrollr.min.js',
 			//'app/js/aos.js',
 			//'app/js/owl.carousel.min.js',
+			//'app/js/mo.min.js',
+			'app/js/jquery.fancybox.js',
 			'app/js/skrollr.min.js',
-			'app/js/mo.min.js',
 			'app/js/classie.js',
+			'app/js/konva.min.js',
+			'app/js/KonvaPlugin.js',
 			'app/js/wow.js',
 			'app/js/flickity.js'
 		])
