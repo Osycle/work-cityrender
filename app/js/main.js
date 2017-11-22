@@ -22,14 +22,14 @@ $(function(){
 
 
 	// SKROLLR
-/*	if( !isMobile ){
+	if( !isMobile ){
 
 		var skr = skrollr.init({
 			smoothScrolling: true,
 			mobileDeceleration: 0.004
 		});
-		//skr.refresh()
-	}*/
+		setTimeout( function(){ skr.refresh() }, 10 )
+	}
 
 	//Owl.Carousel
 	if( $(".index-carousel").length != 0 )
@@ -167,6 +167,7 @@ $(function(){
 			setTimeout( function (){
 				$(".preloader").slideToggle();
 				$( "body" ).css("overflow-y", "auto");
+				scroll(0, 0);
 			}, 600)
 
 	}
@@ -178,76 +179,9 @@ $(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-          
-          var star = $(".dust-container circle");
-
-          function fnRectang(){
-
-            var rectMorph = new TimelineMax({
-              repeat: -1,
-              yoyo: true
-            });
-            rectMorph
-            .to( star, 4, {
-              attr: {
-              	r: 1,
-                cx: "55%",
-								cy: "60%"
-              }
-            })
-            .to( star, 3, {
-              attr: {
-              	r: 1,
-                cx: "42%",
-								cy: "65%"
-              }
-            })
-            .to( star, 4, {
-              attr: {
-              	r: 1,
-                cx: "35%",
-								cy: "45%"
-              }
-            })
-
-
-          }
-          //fnRectang();
-
-
-
-
-          function fnRotation(){
-            TweenMax.to( star,  1, {
-              rotation: 360,
-              transformOrigin: "center center",
-              repeat: 1, 
-              ease: Back.easeOut
-            });
-          }
-
-
-          var asd = 0;
-
-
-
 		$("body").on("mousemove", function(e){
 		$("#dust-content").css("left", (10 + (-e.pageX/100)))
-					 .css("bottom", (0 + (e.pageY/10)));
+					 .css("bottom", (300 + (e.pageY/100)));
 		});
 
 
@@ -286,23 +220,23 @@ $(function(){
 				.to(canvasObj, getRandomIntFloat(2, 5), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
+		      														 getRandomInt( 0, 3 ), )})
 				.to(canvasObj, getRandomIntFloat(2, 5), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
+		      														 getRandomInt( 0, 3 ), )})
 				.to(canvasObj, getRandomIntFloat(2, 5), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
+		      														 getRandomInt( 0, 3 ), )})
 				.to(canvasObj, getRandomIntFloat(2, 5), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
+		      														 getRandomInt( 0, 3 ), )})
 				.to(canvasObj, getRandomIntFloat(2, 5), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
+		      														 getRandomInt( 0, 3 ), )})
 
 		}
   }
@@ -321,7 +255,7 @@ $(function(){
 	var layer = new Konva.Layer();
 
 
-	for ( var i = 0 ; i < 120 ; i++ ){
+	for ( var i = 0 ; i < 80 ; i++ ){
 
 		var firstElPosX = getRandomInt( 0, width );
 		var firstElPosY = getRandomInt( 0, height );
@@ -352,10 +286,6 @@ $(function(){
 
 	});
 }) (jQuery);
-
-
-
-
 
 
 
