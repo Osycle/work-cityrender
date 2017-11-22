@@ -693,6 +693,7 @@ button:hover, button:focus{
 /*
 										 --- HEADER ---
 */
+$bg-image-1: url("../img/bg/bg-1.jpg");
 $header-height: 50px; 
 
 #header{
@@ -702,7 +703,7 @@ $header-height: 50px;
 	left: 0;
 	font-family: $font-family-2;
 	position: relative;
-	background: url("../img/bg/bg-1.jpg") center top;
+	background: $bg-image-1 center top;
 	//height: $header-height;
 	color: white;
 }
@@ -1158,20 +1159,20 @@ $header-height: 50px;
 
 // PRELODER
 .preloader{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1200;
-    background: black;
-    opacity: 1;
-    margin: auto;
-    //transition: all 1s ease-in-out;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999000;
+  background: black;
+  opacity: 1;
+  margin: auto;
+  //transition: all 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
 	.loader{
 		transform: scale(0.5);
@@ -1205,8 +1206,8 @@ $header-height: 50px;
 				stroke: white;
 				stroke-width: 0px;
 				r: 200;
-				cx:225;
-				cy:225;
+				cx: 225;
+				cy: 225;
 			}
 			position: absolute;
 		}
@@ -1217,35 +1218,6 @@ $header-height: 50px;
 
 
 
-
-
-
-
-.dust-container{
-	width: 100%;
-	position: absolute;
-	height: 100%;
-
-/* 	z-index: 30000;
-	width: 100%;
-	height: 100%;
-	z-index: 1;
-	position: absolute;
-	display: block;
-	margin: auto; */
-}
-.konvajs-content{
-	display: none;
-}
-
-
-.dust-circle{
-	fill: white;
-	stroke-width: 50px;
-	//r: 10;
-	//cx: 50%;
-	//cy: 50%;
-}
 
 
 
@@ -1467,35 +1439,26 @@ main{
 //--------------------------INDEX
 
 //TEST
-.iconcity{
-	width: 100px;
-	 &:hover{
-
-  	#style-path-1{
-  		//stroke-width: 0;
-  		//stroke-dashoffset: -3000;
-  		stroke-dashoffset: 2800;
-  	}
-  }
-	#style-path-1{
-	transition: all 1s ease-in;
-	fill: white;
-  stroke: black;
-	stroke-width: 33px;
-	stroke-linecap: round;
-	stroke-linejoin: bevel;
-	stroke-miterlimit: 12;
-	stroke-opacity: 1;
-	stroke-dasharray: 2800;
-	stroke-dashoffset: 1100;
-
-	}
-}
-
 
 footer{
-	display: none;
+	//display: none;
 }
+
+#dust-content{
+	//z-index: 1;
+	transition: all 0.4s cubic-bezier(0.39, 0.58, 0.57, 1);
+	width: 100%;
+	height: 450px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+}
+
+
+.konvajs-content{
+	//display: none;
+}
+
 
 
 
@@ -1666,9 +1629,13 @@ footer{
 // --------------- SHORT-NEWS
 
 .short-news{
-	background: url("../img/bg/bg-1.jpg") no-repeat center 20px;
+	background: $bg-image-1 no-repeat center 20px;
 	min-height: 800px;
 	position: relative;
+	.container{
+		z-index: 2;
+		position: relative;
+	}
 }
 .short-news-content{
 	padding-top: 25px;
@@ -1780,7 +1747,9 @@ footer{
 	}
 	.is-selected{
 		img{
-			filter: drop-shadow(0 1px 10px darken($color_1, 1%) ) drop-shadow(1px 0 10px darken($color_1, 1%) ) ;
+			filter: drop-shadow(0 1px 10px lighten($color_1, 1%) ) 
+							drop-shadow(1px 0 10px lighten($color_1, 1%) )  
+							drop-shadow(0px 0 10px lighten($color_1, 1%) );
 		}
 	}   
 }
@@ -1875,7 +1844,13 @@ footer{
 
 #footer{
 	position: relative;
-	//background: $color_footer;
+	.bg{
+		background: $bg-image-1 no-repeat center -650px;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform: scaleY(-1);
+	}
 	font-size: em(15, 16);
 	p, address{
 		line-height: 170%;
