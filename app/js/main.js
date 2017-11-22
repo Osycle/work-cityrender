@@ -22,15 +22,14 @@ $(function(){
 
 
 	// SKROLLR
-	if( !isMobile ){
+/*	if( !isMobile ){
 
 		var skr = skrollr.init({
-			smoothScrolling: false,
-			forceHeight: false,
+			smoothScrolling: true,
 			mobileDeceleration: 0.004
 		});
-		setTimeout( function(){skr.refresh()}, 10);
-	}
+		//skr.refresh()
+	}*/
 
 	//Owl.Carousel
 	if( $(".index-carousel").length != 0 )

@@ -191,6 +191,7 @@ body{
 	text-size-adjust: none;
 	font: 14px $font-family-1;
 	color: white;
+	//height: auto !important;
 	background-color: black;
 }
 
@@ -693,7 +694,7 @@ button:hover, button:focus{
 /*
 										 --- HEADER ---
 */
-$bg-image-1: url("../img/bg/bg-1.jpg");
+$bg-image-1: url("../img/bg/bg-1.jpg") no-repeat;
 $header-height: 50px; 
 
 #header{
@@ -1746,11 +1747,11 @@ footer{
 		transition: filter 0.1s linear;
 	}
 	.is-selected{
-		img{
+/* 		img{
 			filter: drop-shadow(0 1px 10px lighten($color_1, 1%) ) 
 							drop-shadow(1px 0 10px lighten($color_1, 1%) )  
 							drop-shadow(0px 0 10px lighten($color_1, 1%) );
-		}
+		} */
 	}   
 }
 
