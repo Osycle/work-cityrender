@@ -173,24 +173,86 @@ $(function(){
 	}
 
 
+				if ( $('.rev-slider-page').length != 0 )
+			  $('.rev-slider-page').revolution({
+						delay:9000,
+						startwidth: $( window ).width(),
+						startheight: 517,
+						autoHeight:"off",
+						fullScreenAlignForce:"off",
+
+						onHoverStop:"on",
+
+						thumbWidth:100,
+						thumbHeight:50,
+						thumbAmount:3,
+
+						hideThumbsOnMobile:"off",
+						hideBulletsOnMobile:"on",
+						hideArrowsOnMobile:"off",
+						hideThumbsUnderResoluition:0,
+
+						hideThumbs:-1,
+						hideTimerBar:"on",
+
+						keyboardNavigation:"off",
+
+						navigationType:"bullet",
+						navigationArrows:"small",
+						navigationStyle:"round",
+
+						navigationHAlign:"center",
+						navigationVAlign:"bottom",
+						navigationHOffset: 0,
+						navigationVOffset:-30,
+
+						soloArrowLeftHalign:"left",
+						soloArrowLeftValign:"center",
+						soloArrowLeftHOffset:20,
+						soloArrowLeftVOffset:0,
+
+						soloArrowRightHalign:"right",
+						soloArrowRightValign:"center",
+						soloArrowRightHOffset:20,
+						soloArrowRightVOffset:0,
 
 
+						touchenabled:"off",
+						swipe_velocity:"0.7",
+						swipe_max_touches:"1",
+						swipe_min_touches:"1",
+						drag_block_vertical:"false",
+
+						stopAtSlide:-1,
+						stopAfterLoops:-1,
+						hideCaptionAtLimit:0,
+						hideAllCaptionAtLilmit:0,
+						hideSliderAtLimit:0,
+
+						fullWidth:"on",
+						fullScreen:"off",
+						fullScreenOffsetContainer: "",
+
+						dottedOverlay:"none",
+						forceFullWidth:"off",
+
+			      shadow:0
+			 
+
+			    });
 
 
 
 
 		$("body").on("mousemove", function(e){
 		$("#dust-content").css("left", (10 + (-e.pageX/100)))
-					 .css("bottom", (300 + (e.pageY/100)));
+					 .css("bottom", (150 + (e.pageY/100)));
 		});
-
-
 
 
 //canvasDust
 
   window.canvasDust = {
-
   	circle: {
   		elements : [],
   		firstElPos: [],
@@ -217,26 +279,26 @@ $(function(){
 			});
 
 			tl
-				.to(canvasObj, getRandomIntFloat(2, 5), {
+				.to(canvasObj, getRandomIntFloat(3, 6), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
 		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
+				.to(canvasObj, getRandomIntFloat(3, 6), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
 		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
+				.to(canvasObj, getRandomIntFloat(3, 6), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
+		      														 getRandomInt( 0, 2 ), )})
+				.to(canvasObj, getRandomIntFloat(3, 6), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
+		      														 getRandomInt( 0, 2 ), )})
+				.to(canvasObj, getRandomIntFloat(3, 6), {
 		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
 		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 3 ), )})
+		      														 getRandomInt( 0, 1 ), )})
 
 		}
   }

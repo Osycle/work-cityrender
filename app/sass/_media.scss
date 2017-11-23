@@ -86,12 +86,7 @@
 	html body{
 		font-size: 13px;
 	}
-	.slide-header{
-		left: 0 !important;
-		top: 25% !important;
-		max-width: 100%  !important;
-		width: 100%  !important;
-	}
+
 	.services-list{
 		li{
 			width: 50%;
@@ -144,6 +139,12 @@
 
 
 @media only screen and (max-width: 480px){
+		.slide-header{
+		left: 0 !important;
+		top: 25% !important;
+		max-width: 100%  !important;
+		width: 100%  !important;
+	}
 	html body{
 		font-size: 12px;
 	}

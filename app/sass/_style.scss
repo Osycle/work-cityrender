@@ -1311,6 +1311,7 @@ h2{
 	font-size: em(30, 16);
 }
 h3{
+	color: $color_1;
 	text-transform: uppercase;
 	font-size: em(22, 16);
 	font-weight: 600;
@@ -1336,7 +1337,7 @@ p{
 
 main{
 	overflow: hidden;
-	margin: 30px 0;
+	//margin: 30px 0;
 	position: relative;
 	
 	min-height: 600px;
@@ -1490,7 +1491,6 @@ footer{
 
 .rev-slider{
 
-
 	text-shadow: 0 0 3px black;
 
 	.slide-header{
@@ -1501,8 +1501,10 @@ footer{
 		&:before{
 			@extend .claf;
 			border: 2px solid $color_1;
-			top: -6%;
-			left: -1.5%;
+			top: -3.5%;
+			left: -2%;
+			height: 101%;
+			width: 101%;
 			border-radius: 15px;
 		}
 		h1{
@@ -1515,8 +1517,6 @@ footer{
 			line-height: 60%;
 		}
 		p{
-			
-			
 			position: relative;
 			font-family: $font-family-2;
 			text-transform: uppercase;
@@ -1534,23 +1534,78 @@ footer{
 
 	}
 
-	.slide-1{
-
-	}
 
 	@media only screen and (max-width: 767px){
 
 	}
 }//end
+
+
+
+
+.rev-slider-page{
+
+	text-shadow: 0 0 3px black;
+
+	.slide-header{
+		padding: 35px 50px;
+		border: 1px solid rgba($color_1, 0.5);
+		border-radius: 15px;
+		color: white;
+		&:before{
+			@extend .claf;		
+			//height: 90%;
+			border: 2px solid rgba($color_1, 0.8);
+			top: -3.5%;
+			left: -2%;
+			height: 101%;
+			width: 101%;
+			border-radius: 15px;
+		}
+		h1{
+			position: relative;
+  		text-align: justify;
+			margin: 0;
+			font-size: em(50, 16);
+			font-weight: 500;
+			letter-spacing: 3px;
+			line-height: 60%;
+		}
+
+	}
+
+
+	@media only screen and (max-width: 767px){
+
+	}
+}//end
+.word-style-1{
+	//position: absolute !important;
+	//left: 100%;
+	//margin-left: calc(-50px - 0.5em );
+}
+
+
+
+
+
+
+
+
+
+
+
 .line-shadow-1{
   box-shadow: 0px 2px 50px 16px black;
   z-index: 500;
   position: relative;
   border: 0;
+  margin: 0;
 }
 .line-shadow-2{
   box-shadow: 0px -5px 40px 20px black;
   z-index: 300;
+  margin: 0;
   position: relative;
   border: 0;
 }
@@ -1733,6 +1788,7 @@ footer{
 }
 
 .carousel-partners{
+	filter: grayscale(1);
 	margin: 45px 0;
 	.flickity-prev-next-button{
 		background: transparent;
@@ -1762,6 +1818,78 @@ footer{
 .content-img-sofa{
 	text-align: center;
 }
+
+
+
+
+
+
+
+
+	.bg{
+		background: $bg-image-1 no-repeat center -650px;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform: scaleY(1);
+	}
+
+
+
+//--------------- ABOUT
+
+.about{
+
+	.img-content{
+		img{
+			width: 100%;
+		}
+	}
+
+}
+
+.gold-border-1{
+		border: 1px solid rgba($color_1, 0.9);
+		overflow: hidden;
+		border-radius: 15px;
+		color: white;
+		&:before{
+			@extend .claf;		
+			    transform: scale(1.05);
+			//padding: 10px;
+			//height: 90%;
+			border: 2px solid rgba($color_1, 0.8);
+			//top: 0;
+			//left: 0;
+			height: 100%;
+			width: 100%;
+			border-radius: 15px;
+		}
+}
+.gold-border-2{
+		padding: 35px 50px;
+		border: 1px solid rgba($color_1, 0.5);
+		border-radius: 15px;
+		color: white;
+		&:before{
+			@extend .claf;		
+			//height: 90%;
+			border: 2px solid rgba($color_1, 0.8);
+			top: -3.5%;
+			left: -2%;
+			height: 101%;
+			width: 101%;
+			border-radius: 15px;
+		}
+}
+
+
+
+
+
+
+
+
 
 
 
