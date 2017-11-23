@@ -245,12 +245,19 @@ $(function(){
 
 
 		$("body").on("mousemove", function(e){
-		$("#dust-content").css("left", (10 + (-e.pageX/100)))
-					 .css("bottom", (150 + (e.pageY/100)));
+			if( $("#dust-content").length != 0 ){
+
+			$("#dust-content").css("left", (10 + (-e.pageX/100)))
+											  .css("bottom", (10 + (e.pageY/100)));
+
+			}
+			
 		});
 
 
-//canvasDust
+//dustCanvas
+
+function dustCanvas(){
 
   window.canvasDust = {
   	circle: {
@@ -258,7 +265,6 @@ $(function(){
   		firstElPos: [],
   		pos: []
   	},
-
   	stepCheck: function (posx, posy, radius){
   		var arr = {
 									x: posx,
@@ -270,7 +276,6 @@ $(function(){
 
 			return arr;
   	},
-
   	circleAnimate : function ( canvasObj, x, y, i ){
 
 			var tl = new TimelineMax({
@@ -317,7 +322,7 @@ $(function(){
 	var layer = new Konva.Layer();
 
 
-	for ( var i = 0 ; i < 80 ; i++ ){
+	for ( var i = 0 ; i < 100 ; i++ ){
 
 		var firstElPosX = getRandomInt( 0, width );
 		var firstElPosY = getRandomInt( 0, height );
@@ -343,6 +348,8 @@ $(function(){
 	}
 
 	stage.add(layer);
+}
+if( $("#dust-content").length != 0 ) dustCanvas();
 
 
 
@@ -400,3 +407,18 @@ function scrolledDiv(el) {
 
   	return ((elBottom <= docViewBottom) && (elTop >= docViewTop));
 }
+
+
+
+
+
+
+
+
+
+ aspectRatio: '1:0.666'
+
+
+
+
+

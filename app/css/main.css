@@ -17118,6 +17118,9 @@ main {
   z-index: 1;
   position: relative; }
 
+.page-slider #dust-content {
+  z-index: 21; }
+
 .fullscreen-container {
   width: 100%;
   position: relative;
@@ -17263,6 +17266,8 @@ main {
   .short-news .container, .short-news .container-mpadd, .short-news #footer .footer-content, #footer .short-news .footer-content {
     z-index: 2;
     position: relative; }
+  .short-news #dust-content {
+    margin-bottom: 150px; }
 
 .short-news-content {
   padding-top: 25px; }
@@ -17452,6 +17457,21 @@ main {
   margin: 15px 0;
   color: red; }
 
+.bg-wall-up {
+  background: url("../img/bg/bg-1.jpg") no-repeat center -200px;
+  position: absolute;
+  height: 100%;
+  width: 100%; }
+
+.bg-wall-down {
+  background: url("../img/bg/bg-1.jpg") no-repeat center -200px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1); }
+
 /*
 										 --- FOOTER ---
 */
@@ -17459,7 +17479,7 @@ main {
   position: relative;
   font-size: 0.9375em; }
   #footer .bg {
-    background: url("../img/bg/bg-1.jpg") no-repeat no-repeat center -650px;
+    background: url("../img/bg/bg-1.jpg") no-repeat no-repeat center -450px;
     position: absolute;
     height: 100%;
     width: 100%;

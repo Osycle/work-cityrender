@@ -1442,9 +1442,7 @@ main{
 
 //TEST
 
-footer{
-	//display: none;
-}
+
 
 #dust-content{
 	//z-index: 1;
@@ -1457,9 +1455,6 @@ footer{
 }
 
 
-.konvajs-content{
-	//display: none;
-}
 
 
 
@@ -1467,6 +1462,11 @@ footer{
 .index-slider{
 	  z-index: 1;
     position: relative;
+}
+.page-slider{
+	#dust-content{
+		z-index: 21;
+	}
 }
 //INDEX SLIDER
 .fullscreen-container {
@@ -1692,6 +1692,9 @@ footer{
 	.container{
 		z-index: 2;
 		position: relative;
+	}
+	#dust-content{
+		margin-bottom: 150px;
 	}
 }
 .short-news-content{
@@ -1965,6 +1968,24 @@ footer{
 
 
 
+.bg-wall-up{
+	
+		background: $bg-image-1 center -200px;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		//transform: scaleY(-1);
+
+}
+.bg-wall-down{
+	
+		background: $bg-image-1 center -200px;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		transform: scaleY(-1);
+
+}
 
 
 /*
@@ -1975,7 +1996,7 @@ footer{
 #footer{
 	position: relative;
 	.bg{
-		background: $bg-image-1 no-repeat center -650px;
+		background: $bg-image-1 no-repeat center -450px;
 		position: absolute;
 		height: 100%;
 		width: 100%;
