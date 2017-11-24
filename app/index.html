@@ -37,14 +37,11 @@
 		<p>Ваш браузер не поддерживает скрипты!<br/> 
 			 Пожалуйста подключите в настройках браузера Javascript</p>
 	</noscript> 
+
+
+
 	<!-- HEADER -->
-	
 	<div class="header-hidden"></div>
-
-
-
-
-
 	<header id="header" class="header-scroll">
 		<!-- HEADER TOP -->
 		<div class="skin-header-top hidden-sm hidden-xs">
@@ -105,7 +102,7 @@
 									<li><a href="index.html">Главная</a></li>
 									<li><a href="about.html">О нас</a>
 										<ul class="sub-menu-1">
-											<li><a href="ouremployees.html">Наши сотрудники</a></li>
+											<li><a href="coworkers.html">Наши сотрудники</a></li>
 										</ul>
 									</li>
 									<li><a href="portfolio.html">Портфолио</a></li>
@@ -139,7 +136,7 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="about.html">О нас</a>
 					<ul class="sub-menu-1">
-						<li><a href="ouremployees.html">Наши сотрудники</a></li>
+						<li><a href="coworkers.html">Наши сотрудники</a></li>
 					</ul>
 				</li>
 				<li><a href="portfolio.html">Портфолио</a></li>
@@ -847,7 +844,7 @@
 
 	<!-- FOOTER -->
 	<footer id="footer" class="container-fluid align-center-sm">
-		<div class="bg bg-cover"></div>
+		<div class="bg bg-cover hidden-xs hidden-sm"></div>
 		<div class="container">
 				
 
@@ -884,7 +881,7 @@
 							(ориентир Главпочтамт)
 						</address>
 					</div>
-					<div class="footer-copy p-v-30 link-hover">
+					<div class="footer-copy p-v-30 link-hover hidden-xs hidden-sm">
 						<p>
 							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
 									Создание сайтов
@@ -993,7 +990,16 @@
 			REVOLUTION Slider
 		*/
 			  $(function() {
-			  	
+
+			  	$("[data-transition]").attr( "data-transition", "fade" )
+			  	$("[data-splitin]").attr( "data-splitin", " " )
+
+			  	$(".randomrotate").removeClass("randomrotate");
+			  	$(".splitted").removeClass("splitted");
+
+			  	console.log( $("[data-transition]") )
+
+
 			    $('.rev-slider').revolution({
 						delay:9000,
 						startwidth: $( window ).width(),
