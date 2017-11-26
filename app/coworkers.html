@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="description" content="">
+		<meta name="desc-contentription" content="">
 		
 	  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 		<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -137,7 +137,7 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="about.html">О нас</a>
 					<ul class="sub-menu-1">
-						<li><a href="coworkers.html">Наши сотрудники</a></li>
+						<li class="active"><a href="coworkers.html">Наши сотрудники</a></li>
 					</ul>
 				</li>
 				<li><a href="portfolio.html">Портфолио</a></li>
@@ -193,14 +193,14 @@
 						<div id="fail-message"></div>
 					</div>
 					<h3>Связаться с нами</h3>
-					<form id="feedback-contacts" method="post" action="" class="contact-form">
+					<form id="feedback-form" method="post" action="" class="contact-form">
 
 
 
 						<!-- NAME -->
 						<span class="input input--nariko input-name">
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="text" 
 										 id="input-1" 
 										 name="name"
@@ -217,7 +217,7 @@
 						<span class="input input--nariko input-email">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="email" 
 										 id="input-2" 
 										 name="email"
@@ -235,7 +235,7 @@
 						<span class="input input--nariko input-phone">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="tel" 
 										 id="input-3" 
 										 name="tel"
@@ -256,7 +256,7 @@
 							<textarea class="" 
 										 style="resize: none;"
 										 id="textarea-4"
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="text" 
 										 name="message"
 										 autocomplete="off" 
@@ -267,7 +267,7 @@
 						</span>
 
 						<div class="form-footer">
-			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-form" autofocus="autofocus">
 			      		<b>Отправить</b>
 			      	</button>
 			      </div>
@@ -386,7 +386,7 @@
 							<div class="img-content gold-border-1">
 								<img src="img/coworkers/1.jpg"/>
 							</div>
-							<div class="desc">
+							<div class="desc-content">
 								<h5>Николай никитов</h5>
 								<p>Архитектор</p>
 							</div>
@@ -397,7 +397,7 @@
 							<div class="img-content gold-border-1">
 								<img src="img/coworkers/2.jpg"/>
 							</div>
-							<div class="desc">
+							<div class="desc-content">
 								<h5>Николай никитов</h5>
 								<p>Архитектор</p>
 							</div>
@@ -408,7 +408,7 @@
 							<div class="img-content gold-border-1">
 								<img src="img/coworkers/3.jpg"/>
 							</div>
-							<div class="desc">
+							<div class="desc-content">
 								<h5>Николай никитов</h5>
 								<p>Архитектор</p>
 							</div>
@@ -419,7 +419,7 @@
 							<div class="img-content gold-border-1">
 								<img src="img/coworkers/1.jpg"/>
 							</div>
-							<div class="desc">
+							<div class="desc-content">
 								<h5>Николай никитов</h5>
 								<p>Архитектор</p>
 							</div>
@@ -430,7 +430,7 @@
 							<div class="img-content gold-border-1">
 								<img src="img/coworkers/2.jpg"/>
 							</div>
-							<div class="desc">
+							<div class="desc-content">
 								<h5>Николай никитов</h5>
 								<p>Архитектор</p>
 							</div>
@@ -441,7 +441,7 @@
 							<div class="img-content gold-border-1">
 								<img src="img/coworkers/3.jpg"/>
 							</div>
-							<div class="desc">
+							<div class="desc-content">
 								<h5>Николай никитов</h5>
 								<p>Архитектор</p>
 							</div>
@@ -476,10 +476,9 @@
 
 
 
-
 	<!-- FOOTER -->
 	<footer id="footer" class="container-fluid align-center-sm">
-		<div class="bg bg-cover"></div>
+		<div class="bg bg-cover hidden-xs hidden-sm"></div>
 		<div class="container">
 				
 
@@ -516,7 +515,7 @@
 							(ориентир Главпочтамт)
 						</address>
 					</div>
-					<div class="footer-copy p-v-30 link-hover">
+					<div class="footer-copy p-v-30 link-hover hidden-xs hidden-sm">
 						<p>
 							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
 									Создание сайтов
@@ -598,6 +597,8 @@
 		</div>
 	</footer>
 	
+
+
 
 
 

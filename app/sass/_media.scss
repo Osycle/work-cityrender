@@ -61,10 +61,11 @@
 		
 		.footer-content{
 			display: block;
+	    height: inherit;
 		}
 
 		.input{
-			max-width: fit-content;
+			//max-width: fit-content;
 		}
 
 	}
@@ -101,19 +102,6 @@
 
 
 		text-align: center;
-		h1{
-			&::before{
-				left: 50%;
-	    	margin-left: -25px;
-			}
-		}
-		.about-short, .news-short{
-			padding: 0;
-		}
-		.news-desc{
-			margin-left: 5%;
-			padding-right: 5%;
-		}
 
 		.btn-lnk{
 			margin: auto;
@@ -149,9 +137,7 @@
 
 
 @media (max-width: 280px) {
-	#footer{
-		display: none;
-	}
+
 }
 
 
