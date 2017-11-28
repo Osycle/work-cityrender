@@ -17722,7 +17722,7 @@ button:hover, button:focus {
   height: 100%;
   top: 0;
   left: 0;
-  z-index: 999000;
+  z-index: 99999;
   background: black;
   opacity: 1;
   margin: auto;
@@ -18031,10 +18031,6 @@ main {
   bottom: 0;
   position: absolute; }
 
-.index-slider {
-  z-index: 1;
-  position: relative; }
-
 .page-slider #dust-content {
   z-index: 21; }
 
@@ -18136,10 +18132,10 @@ main {
   border: 0; }
 
 .round .bullet {
-  width: 16px !important;
+  width: 15px !important;
   -webkit-background-size: cover !important;
   background-size: cover !important;
-  height: 16px !important;
+  height: 15px !important;
   margin-left: 15px !important;
   opacity: 1 !important;
   margin-right: 15px !important; }
@@ -18219,6 +18215,7 @@ main {
     .short-news-content .header-content a {
       display: block; }
   .short-news-content .img-content {
+    display: inline-block;
     position: relative; }
     .short-news-content .img-content img {
       -webkit-border-radius: 5px;
@@ -18267,6 +18264,10 @@ main {
   .short-partners .partners-item img {
     display: block;
     margin: auto; }
+
+@media only screen and (max-width: 767px) {
+  .short-partners .partners-item {
+    width: 100%; } }
 
 .carousel-partners {
   -webkit-filter: grayscale(1);
@@ -18784,7 +18785,7 @@ main {
 
 @media only screen and (max-width: 991px) {
   html body {
-    font-size: 14px; }
+    font-size: 15px; }
   .logo img {
     width: 100px; }
   .services-list .icomoon {
@@ -18802,11 +18803,14 @@ main {
 
 @media (max-width: 767px) {
   html body {
-    font-size: 13px; }
+    font-size: 15px; }
   .services-list li {
+    font-size: 1.6em;
     width: 50%; }
   .services-list .icomoon {
-    padding-right: 10px;
+    width: 100%;
+    margin: 10px 0;
+    padding-right: 0;
     padding-left: 0;
     float: left; }
   main {
@@ -18817,9 +18821,14 @@ main {
 
 @media only screen and (max-width: 480px) {
   .slide-header {
-    left: 0 !important;
+    padding: 15px 5px !important;
+    left: 7.5% !important;
     top: 25% !important;
     max-width: 100%  !important;
-    width: 100%  !important; }
+    width: 85%  !important; }
+    .slide-header h1 {
+      font-size: 1.875em !important; }
+    .slide-header p {
+      font-size: 1.25em !important; }
   html body {
-    font-size: 12px; } }
+    font-size: 15px; } }

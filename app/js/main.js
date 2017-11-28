@@ -44,7 +44,7 @@ $(function(){
 		autoPlay: 2000,
 		arrowShape: arrowStyle,
 		//imagesLoaded: true,
-		//prevNextButtons: false,
+		prevNextButtons: checkView(991),
 		wrapAround: true,
 		adaptiveHeight: true,
 		//selectedAttraction: 0.2,

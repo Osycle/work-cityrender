@@ -23,7 +23,7 @@
 
 @media only screen and (max-width: 991px){
 	html body{
-		font-size: 14px;
+		font-size: 15px;
 	}
 
 	.logo{
@@ -85,15 +85,19 @@
 @media (max-width: 767px) {
 
 	html body{
-		font-size: 13px;
+		font-size: 15px;
 	}
 
 	.services-list{
 		li{
+			font-size: 1.6em;
 			width: 50%;
 		}
 		.icomoon {
-			padding-right: 10px;
+			width: 100%;
+			margin: 10px 0;
+			//transform: scale(1.5);
+			padding-right: 0;
 			padding-left: 0;
 			float: left;
 		}
@@ -124,13 +128,20 @@
 
 @media only screen and (max-width: 480px){
 		.slide-header{
-		left: 0 !important;
-		top: 25% !important;
-		max-width: 100%  !important;
-		width: 100%  !important;
-	}
+			h1{
+				font-size: em( 30, 16 ) !important;
+			}
+			p{
+				font-size: em( 20, 16 ) !important;	
+			}
+			padding: 15px 5px !important;
+			left: 7.5% !important;
+			top: 25% !important;
+			max-width: 100%  !important;
+			width: 85%  !important;
+		}
 	html body{
-		font-size: 12px;
+		font-size: 15px;
 	}
 
 }

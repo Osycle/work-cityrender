@@ -991,13 +991,16 @@
 		*/
 			  $(function() {
 
-			  	$("[data-transition]").attr( "data-transition", "fade" )
-			  	$("[data-splitin]").attr( "data-splitin", " " )
+			  	if( $( window ).width() < 992)
+			  	(function(){
+			  		try{
+					  	$("[data-transition]").attr( "data-transition", "fade" )
+					  	$("[data-splitin]").attr( "data-splitin", " " )
+					  	$(".randomrotate").removeClass("randomrotate");
+					  	$(".splitted").removeClass("splitted");
+			  		}catch(e){} 
+			  	})();
 
-			  	$(".randomrotate").removeClass("randomrotate");
-			  	$(".splitted").removeClass("splitted");
-
-			  	console.log( $("[data-transition]") )
 
 
 			    $('.rev-slider').revolution({
