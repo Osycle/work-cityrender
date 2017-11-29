@@ -41,11 +41,12 @@
 
 
 
+
 	<!-- HEADER -->
 	<div class="header-hidden"></div>
 	<header id="header" class="header-scroll">
 		<!-- HEADER TOP -->
-		<div class="skin-header-top hidden-sm hidden-xs">
+		<div class="skin-header-top">
 			<div class="container">
 				<!-- HEADER NAVBAR -->
 				<div class="header-navbar">
@@ -65,18 +66,30 @@
 			      	<a  href="index.html" ><img src="img/logo.png"/></a>
 			      </div>
 
-						<div class="phones hidden-sm hidden-xs">
+						<div class="phones">
 							<span class="icomoon icon-phone-call"></span>
-
 							<text> 
 								(+998 97) 777-00-00<br>
 							 	(+998 97) 777-00-00 
 							</text>
-
 						</div>
 
+						<div class="footer-feedback align-center visible-sm visible-xs p-v-30">	
+							<a role="button" data-toggle="modal" data-target="#feedback-modal-1">
+								<span class="text-style-1">Обратная связь</span>
+							</a>
+						</div>
 
-
+						<div class="header-social hidden-md hidden-lg">
+							<p class="text-style-1">Мы в социальных сетях<br></p>
+							<ul>
+								<li><a href=""><i class="icomoon icon-telegram"></i></a></li>
+								<li><a href=""><i class="icomoon icon-facebook"></i></a></li>
+								<li><a href=""><i class="icomoon icon-instagram"></i></a></li>
+							</ul>
+								<a href=""></a>
+							</p>
+						</div>
 
 					</div>
 
@@ -100,14 +113,14 @@
 			       	<div class="nav-header">
 
 			          <ul class="menu-list">
-									<li><a href="index.html">Главная</a></li>
+									<li class="active"><a href="index.html">Главная</a></li>
 									<li><a href="about.html">О нас</a>
 										<ul class="sub-menu-1">
 											<li><a href="coworkers.html">Наши сотрудники</a></li>
 										</ul>
 									</li>
 									<li><a href="portfolio.html">Портфолио</a></li>
-									<li class="active"><a href="services.html">Улуги</a></li>
+									<li><a href="services.html">Улуги</a></li>
 									<li><a href="3dtour.html">3D Тур</a></li>
 									<li><a href="partners.html">Наши партнеры</a></li>
 									<li><a href="contacts.html">Контакты</a></li>
@@ -123,6 +136,12 @@
 		</div>
 		
 	</header>
+
+
+
+
+
+
 
 
 
@@ -424,6 +443,16 @@
 
 									<div class="carousel-content">
 
+									  
+									  <div class="carousel-cell services-item">
+									  	<a href="services-in.html">
+									    	<div class="img-content">
+							    				<i class="icomoon icon-building"></i>
+							    				<p>Архитектурные проекты</p>
+									    	</div>
+									  	</a>
+									  </div>
+									  
 									  <div class="carousel-cell services-item">
 									  	<a href="services-in.html">
 									    	<div class="img-content">
@@ -432,16 +461,8 @@
 									    	</div>
 									  	</a>
 									  </div>
-									  
-									  <div class="carousel-cell services-item">
-									  	<a href="services-in.html">
-									    	<div class="img-content">
-							    				<i class="icomoon icon-building"></i>
-							    				<p>Дизайн экстерьера</p>
-									    	</div>
-									  	</a>
-									  </div>
-									  
+
+
 									  <div class="carousel-cell services-item">
 									  	<a href="services-in.html">
 									    	<div class="img-content">
@@ -450,39 +471,21 @@
 									    	</div>
 									  	</a>
 									  </div>
-									  
+
+									  <div class="carousel-cell services-item">
+									  	<a href="services-in.html">
+									    	<div class="img-content">
+							    				<i class="icomoon icon-house-sketch"></i>
+							    				<p>Процесс работ</p>
+									    	</div>
+									  	</a>
+									  </div>
+
 									  <div class="carousel-cell services-item">
 									  	<a href="services-in.html">
 									    	<div class="img-content">
 							    				<i class="icomoon icon-sofa"></i>
 							    				<p>Дизайн и изготовление мебели</p>
-									    	</div>
-									  	</a>
-									  </div>
-									  
-									  <div class="carousel-cell services-item">
-									  	<a href="services-in.html">
-									    	<div class="img-content">
-							    				<i class="icomoon icon-chimney"></i>
-							    				<p>Фибробетон</p>
-									    	</div>
-									  	</a>
-									  </div>
-									   
-									  <div class="carousel-cell services-item">
-									  	<a href="services-in.html">
-									    	<div class="img-content">
-							    				<i class="icomoon icon-pattern"></i>
-							    				<p>Художественная ковка</p>
-									    	</div>
-									  	</a>
-									  </div>
-									   
-									  <div class="carousel-cell services-item">
-									  	<a href="services-in.html">
-									    	<div class="img-content">
-							    				<i class="icomoon icon-brickwall"></i>
-							    				<p>Живопись и декор</p>
 									    	</div>
 									  	</a>
 									  </div>
@@ -496,16 +499,35 @@
 									  	</a>
 									  </div>
 									     
+
+
 									  <div class="carousel-cell services-item">
 									  	<a href="services-in.html">
 									    	<div class="img-content">
-							    				<i class="icomoon icon-house-sketch"></i>
-							    				<p>Процесс работ</p>
+							    				<i class="icomoon icon-brickwall"></i>
+							    				<p>Живопись и декор</p>
+									    	</div>
+									  	</a>
+									  </div>
+									<!--
+									  <div class="carousel-cell services-item">
+									  	<a href="services-in.html">
+									    	<div class="img-content">
+							    				<i class="icomoon icon-chimney"></i>
+							    				<p>Фибробетон</p>
 									    	</div>
 									  	</a>
 									  </div>
 
-							
+									  <div class="carousel-cell services-item">
+									  	<a href="services-in.html">
+									    	<div class="img-content">
+							    				<i class="icomoon icon-pattern"></i>
+							    				<p>Художественная ковка</p>
+									    	</div>
+									  	</a>
+									  </div>
+									-->
 									</div>
 
 						

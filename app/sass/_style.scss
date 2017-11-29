@@ -795,7 +795,7 @@ $header-height: 50px;
 }
 
 
-.header-navbar, .menu-toggle{
+.header-navbar{
 	@include table-celling( 300px );
 	width: inherit;
 }
@@ -862,7 +862,16 @@ $header-height: 50px;
 	vertical-align: top;
 }
 
-
+.header-social{
+	text-align: center;
+	margin: 15px 0;
+	ul{
+		margin: 15px 0;
+		li{
+			display: inline-block;
+		}
+	}
+}
 
 
 
@@ -1038,7 +1047,7 @@ $header-height: 50px;
 
 //MINI MENU
 .min-menu{
-	 z-index: 2100;
+	 z-index: 1030;
 	 position: relative;
 }
 
@@ -1058,10 +1067,19 @@ $header-height: 50px;
 .modal-dialog{
 		width: 400px;
    // margin: 50px 50wv;
-		@media only screen and (max-width: 767px){
-			width: 80%;
+		@media only screen and (max-width: 991px){
+			width: 75%;
 			margin: 50px auto;
+			margin-top: 25%;
+			margin-bottom: 5%;
 		}
+		@media only screen and (max-width: 767px){
+			width: 90%;
+			margin: 50px auto;
+			margin-top: 25%;
+			margin-bottom: 5%;
+		}
+
 	
 	.btn{
 		background-color: transparent;
@@ -1083,12 +1101,14 @@ $header-height: 50px;
 
 	.icon-bar{
 		background-color: white;
-
+		width: 30px;
+		display: inline-block;
+    height: 2px;
    	&:nth-child(1){
-   		transform: rotate(138deg) translate(4px, -2px);
+   		transform: rotate(-135deg) translate(0, 4px);
    	}
    	&:nth-child(2){
-   		transform: rotate(-138deg) translate(4px, 2px);
+   		transform: rotate(135deg) translate(20px, 24px);
    		
    	}
 
@@ -1209,15 +1229,17 @@ $header-height: 50px;
 
 	.modal-content{
 		color: $color_1;
-		@include modal-center(400px, 5%);
+		//@include modal-center(400px, 5%);
 		margin-top: 15px;
 
 		@media only screen and (max-width: 991px){
-			@include modal-center(350px, 10%);
+		//	@include modal-center(350px, 10%);
+		width: 100%;
 		}
 		
 		@media only screen and (max-width: 767px){
-			@include modal-center(300px, 5%);
+		//	@include modal-center(300px, 5%);
+
 		}
 
 
