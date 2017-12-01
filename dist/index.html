@@ -37,17 +37,14 @@
 		<p>Ваш браузер не поддерживает скрипты!<br/> 
 			 Пожалуйста подключите в настройках браузера Javascript</p>
 	</noscript> 
+
+
+
 	<!-- HEADER -->
-	
 	<div class="header-hidden"></div>
-
-
-
-
-
 	<header id="header" class="header-scroll">
 		<!-- HEADER TOP -->
-		<div class="skin-header-top hidden-sm hidden-xs">
+		<div class="skin-header-top">
 			<div class="container">
 				<!-- HEADER NAVBAR -->
 				<div class="header-navbar">
@@ -67,18 +64,30 @@
 			      	<a  href="index.html" ><img src="img/logo.png"/></a>
 			      </div>
 
-						<div class="phones hidden-sm hidden-xs">
+						<div class="phones">
 							<span class="icomoon icon-phone-call"></span>
-
 							<text> 
 								(+998 97) 777-00-00<br>
 							 	(+998 97) 777-00-00 
 							</text>
-
 						</div>
 
+						<div class="footer-feedback align-center visible-sm visible-xs p-v-30">	
+							<a role="button" data-toggle="modal" data-target="#feedback-modal-1">
+								<span class="text-style-1">Обратная связь</span>
+							</a>
+						</div>
 
-
+						<div class="header-social hidden-md hidden-lg">
+							<p class="text-style-1">Мы в социальных сетях<br></p>
+							<ul>
+								<li><a href=""><i class="icomoon icon-telegram"></i></a></li>
+								<li><a href=""><i class="icomoon icon-facebook"></i></a></li>
+								<li><a href=""><i class="icomoon icon-instagram"></i></a></li>
+							</ul>
+								<a href=""></a>
+							</p>
+						</div>
 
 					</div>
 
@@ -102,10 +111,10 @@
 			       	<div class="nav-header">
 
 			          <ul class="menu-list">
-									<li><a href="index.html">Главная</a></li>
+									<li class="active"><a href="index.html">Главная</a></li>
 									<li><a href="about.html">О нас</a>
 										<ul class="sub-menu-1">
-											<li><a href="ouremployees.html">Наши сотрудники</a></li>
+											<li><a href="coworkers.html">Наши сотрудники</a></li>
 										</ul>
 									</li>
 									<li><a href="portfolio.html">Портфолио</a></li>
@@ -139,7 +148,7 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="about.html">О нас</a>
 					<ul class="sub-menu-1">
-						<li><a href="ouremployees.html">Наши сотрудники</a></li>
+						<li><a href="coworkers.html">Наши сотрудники</a></li>
 					</ul>
 				</li>
 				<li><a href="portfolio.html">Портфолио</a></li>
@@ -195,14 +204,14 @@
 						<div id="fail-message"></div>
 					</div>
 					<h3>Связаться с нами</h3>
-					<form id="feedback-contacts" method="post" action="" class="contact-form">
+					<form id="feedback-form" method="post" action="" class="contact-form">
 
 
 
 						<!-- NAME -->
 						<span class="input input--nariko input-name">
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="text" 
 										 id="input-1" 
 										 name="name"
@@ -219,7 +228,7 @@
 						<span class="input input--nariko input-email">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="email" 
 										 id="input-2" 
 										 name="email"
@@ -237,7 +246,7 @@
 						<span class="input input--nariko input-phone">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="tel" 
 										 id="input-3" 
 										 name="tel"
@@ -258,7 +267,7 @@
 							<textarea class="" 
 										 style="resize: none;"
 										 id="textarea-4"
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="text" 
 										 name="message"
 										 autocomplete="off" 
@@ -269,7 +278,7 @@
 						</span>
 
 						<div class="form-footer">
-			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-form" autofocus="autofocus">
 			      		<b>Отправить</b>
 			      	</button>
 			      </div>
@@ -308,7 +317,7 @@
 	<!-- REV SLIDER -->
 
 	<div class="index-slider">
-		<div class="fullscreen-container" data-0="transform: translate3d(0%, -10%, 0px);" data-750="transform: translate3d( 0%, 10%, 0px);">
+		<div class="fullscreen-container">
 			<hr class="line-shadow-1">
 			<div class="rev-slider" >
 				<ul>
@@ -319,9 +328,9 @@
 							data-masterspeed="2000">
 
 						<img src="img/slider/slide-1.jpg">
-
+						<div class="container">
 							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort " 
-									 data-x="left" 
+
 									 data-y="top"
 									 data-voffset="75"
 									 data-hoffset="100"
@@ -357,31 +366,32 @@
 							</div>
 
 
-						<div class="tp-caption customin start show" 
-								 data-x="center" 
-								 data-y="bottom" 
-								 data-voffset="-50" 
-								 data-hoffset="0" 
-								 data-speed="700"
-								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="3300">
-								<b class="btn-default">
-									<a href="services-in.html">Перейти в раздел</a>
-								</b>
+							<div class="tp-caption customin start show" 
+									 data-x="center" 
+									 data-y="bottom" 
+									 data-voffset="-50" 
+									 data-hoffset="0" 
+									 data-speed="700"
+									 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									 data-start="3300">
+									<b class="btn-default">
+										<a href="services-in.html">Перейти в раздел</a>
+									</b>
+							</div>
+
 						</div>
 					</li>
 
-
-
+					
 					<!-- SLIDE -->
 					<li class="slide-2" 
 							data-transition="3dcurtain-horizontal"
 							data-masterspeed="2000">
 
 						<img src="img/slider/slide-2.jpg">
+						<div class="container">
+							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort " 
 
-							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort" 
-									 data-x="left" 
 									 data-y="top"
 									 data-voffset="75"
 									 data-hoffset="100"
@@ -397,7 +407,7 @@
 										 	 data-splitout="lines" 
 											 data-start="900" 
 											 data-easing="easeOutBack">
-											 Живопись и<br>
+											 Живопись и <br>
 											 декор
 									</h1>
 
@@ -417,30 +427,32 @@
 							</div>
 
 
-						<div class="tp-caption customin start show" 
-								 data-x="center" 
-								 data-y="bottom" 
-								 data-voffset="-50" 
-								 data-hoffset="0" 
-								 data-speed="700"
-								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="3300">
-								<b class="btn-default">
-									<a href="services-in.html">Перейти в раздел</a>
-								</b>
+							<div class="tp-caption customin start show" 
+									 data-x="center" 
+									 data-y="bottom" 
+									 data-voffset="-50" 
+									 data-hoffset="0" 
+									 data-speed="700"
+									 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									 data-start="3300">
+									<b class="btn-default">
+										<a href="services-in.html">Перейти в раздел</a>
+									</b>
+							</div>
+
 						</div>
 					</li>
-					
 
+					
 					<!-- SLIDE -->
 					<li class="slide-3" 
 							data-transition="3dcurtain-horizontal"
 							data-masterspeed="2000">
 
 						<img src="img/slider/slide-3.jpg">
+						<div class="container">
+							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort " 
 
-							<div class="caption slide-header randomrotate skewfromleftshort skewtoleftshort" 
-									 data-x="left" 
 									 data-y="top"
 									 data-voffset="75"
 									 data-hoffset="100"
@@ -456,8 +468,8 @@
 										 	 data-splitout="lines" 
 											 data-start="900" 
 											 data-easing="easeOutBack">
-											 Живопись и<br>
-											 декор
+											 Дизайн<br>
+											 интерьеров
 									</h1>
 
 									<p  class="tp-caption randomrotate start splitted" 
@@ -476,22 +488,25 @@
 							</div>
 
 
-						<div class="tp-caption customin start show" 
-								 data-x="center" 
-								 data-y="bottom" 
-								 data-voffset="-50" 
-								 data-hoffset="0" 
-								 data-speed="700"
-								 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
-								 data-start="3300">
-								<b class="btn-default">
-									<a href="services-in.html">Перейти в раздел</a>
-								</b>
+							<div class="tp-caption customin start show" 
+									 data-x="center" 
+									 data-y="bottom" 
+									 data-voffset="-50" 
+									 data-hoffset="0" 
+									 data-speed="700"
+									 data-customin="x:0;y:-100;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:5;scaleY:5;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;"
+									 data-start="3300">
+									<b class="btn-default">
+										<a href="services-in.html">Перейти в раздел</a>
+									</b>
+							</div>
+
 						</div>
 					</li>
 
 
 
+	
 
 				
 
@@ -542,15 +557,17 @@
 				<div class="services-list col-md-3">
 					<div class="align-center-sm">
 						<ul>
+							<li><a href=""><i class="icomoon icon-building"></i>Архитектурные проекты</a></li>
 							<li><a href=""><i class="icomoon icon-blueprint"></i>Дизайн интерьера</a></li>
-							<li><a href=""><i class="icomoon icon-building"></i>Дизайн экстерьера</a></li>
 							<li><a href=""><i class="icomoon icon-architecture"></i>Ландшафтный дизайн</a></li>
-							<li><a href=""><i class="icomoon icon-sofa"></i>Дизайн и изготовление мебели</a></li>
-							<li><a href=""><i class="icomoon icon-chimney"></i>Фибробетон</a></li>
-							<li><a href=""><i class="icomoon icon-pattern"></i>Художественная ковка</a></li>
-							<li><a href=""><i class="icomoon icon-brickwall"></i>Живопись и декор</a></li>
-							<li><a href=""><i class="icomoon icon-ferris"></i>3d тур</a></li>
 							<li><a href=""><i class="icomoon icon-house-sketch"></i>Процесс работ</a></li>
+							<li><a href=""><i class="icomoon icon-sofa"></i>Дизайн и изготовление мебели</a></li>
+							<li><a href=""><i class="icomoon icon-ferris"></i>3d тур</a></li>
+							<li><a href=""><i class="icomoon icon-brickwall"></i>Живопись и декор</a></li>
+							
+<!-- 							<li><a href=""><i class="icomoon icon-chimney"></i>Фибробетон</a></li>
+							<li><a href=""><i class="icomoon icon-pattern"></i>Художественная ковка</a></li> -->
+
 						</ul>
 					</div>
 				</div> 
@@ -627,7 +644,6 @@
 
 		
 		<div class="row short-news align-center-sm m-v-30">
-
 			<div class="container">
 
 				<div class="col-xs-12">
@@ -709,10 +725,10 @@
 			</div>
 
 
-			<div class="m-v-120 content-img-sofa" data-1200="transform: translate3d(0%, 50%, 0px);" data-2200="transform: translate3d( 0%, 0%, 0px);">
+			<div class="m-v-60 content-img-sofa" data-1200="transform: translate3d(0%, 30%, 0px);" data-2000="transform: translate3d( 0%, 0%, 0px);">
 				<img src="img/sofa.png"/>
 			</div>
-			<div id="dust-content" data-1200="transform: translate3d(0%, 50%, 0px);" data-2200="transform: translate3d( 0%, 0%, 0px);"></div>
+			<div id="dust-content" data-1200="transform: translate3d(0%, 30%, 0px);" data-2000="transform: translate3d( 0%, 0%, 0px);"></div>
 
 
 		</div>
@@ -842,7 +858,7 @@
 
 	<!-- FOOTER -->
 	<footer id="footer" class="container-fluid align-center-sm">
-		<div class="bg bg-cover"></div>
+		<div class="bg bg-cover hidden-xs hidden-sm"></div>
 		<div class="container">
 				
 
@@ -879,7 +895,7 @@
 							(ориентир Главпочтамт)
 						</address>
 					</div>
-					<div class="footer-copy p-v-30 link-hover">
+					<div class="footer-copy p-v-30 link-hover hidden-xs hidden-sm">
 						<p>
 							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
 									Создание сайтов
@@ -949,6 +965,7 @@
 							<a href=""></a>
 						</p>
 					</div>
+
 				</div>
 
 
@@ -988,7 +1005,19 @@
 			REVOLUTION Slider
 		*/
 			  $(function() {
-			  	
+
+			  	if( $( window ).width() < 992)
+			  	(function(){
+			  		try{
+					  	$("[data-transition]").attr( "data-transition", "fade" )
+					  	$("[data-splitin]").attr( "data-splitin", " " )
+					  	$(".randomrotate").removeClass("randomrotate");
+					  	$(".splitted").removeClass("splitted");
+			  		}catch(e){} 
+			  	})();
+
+
+
 			    $('.rev-slider').revolution({
 						delay:9000,
 						startwidth: $( window ).width(),
@@ -1004,7 +1033,7 @@
 
 						hideThumbsOnMobile:"off",
 						hideBulletsOnMobile:"on",
-						hideArrowsOnMobile:"off",
+						hideArrowsOnMobile:"on",
 						hideThumbsUnderResoluition:0,
 
 						hideThumbs:-1,

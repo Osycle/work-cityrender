@@ -25,30 +25,12 @@ $(function(){
 	if( !isMobile ){
 
 		var skr = skrollr.init({
-			smoothScrolling: false,
-			forceHeight: false,
+			smoothScrolling: true,
 			mobileDeceleration: 0.004
 		});
-		setTimeout( function(){skr.refresh()}, 10);
+		setTimeout( function(){ skr.refresh() }, 10 )
 	}
 
-	//Owl.Carousel
-	if( $(".index-carousel").length != 0 )
-	$(".index-carousel").owlCarousel({
-	    animateOut: 'fadeOut',
-	    animateIn: 'fadeIn',
-	    //autoWidth: true,
-	    //rewind: true,
-	    mergeFit: true,
-	    center: true,
-	    loop: true,
-	    items:1,
-	    //margin:30,
-	    //mouseDrag: false,
-	    autoplay: true,
-	    autoplayTimeout: 6000,
-	    smartSpeed:450
-	});
 
   // Flikity Carousel
   	var arrowStyle = { 
@@ -62,7 +44,7 @@ $(function(){
 		autoPlay: 2000,
 		arrowShape: arrowStyle,
 		//imagesLoaded: true,
-		//prevNextButtons: false,
+		prevNextButtons: checkView(991),
 		wrapAround: true,
 		adaptiveHeight: true,
 		//selectedAttraction: 0.2,
@@ -71,6 +53,19 @@ $(function(){
 		pageDots: false,
 		//contain: true,
 		//percentPosition: true,
+		cellAlign: 'center'
+	});
+	var carouselServices = $('.carousel-services .carousel-content').flickity({
+		arrowShape: { 
+		  x0: 10,
+		  x1: 65, y1: 50,
+		  x2: 65, y2: 0,
+		  x3: 55
+		},
+		adaptiveHeight: true,
+		initialIndex: 3,
+		draggable: !checkView(991),
+		pageDots: false,
 		cellAlign: 'center'
 	});
 
@@ -163,200 +158,193 @@ $(function(){
 
 		$(".logo-circle-1").eq(0).css("stroke-dasharray", ser).css("stroke-width", 3);
 
-		if ( imagesLoadedCount >= imagesTotalCount )
+		imagesLoadedCount >= imagesTotalCount ? 
 
 			setTimeout( function (){
+
 				$(".preloader").slideToggle();
 				$( "body" ).css("overflow-y", "auto");
+				scroll(0, 0);
+
 			}, 600)
 
+		: void(0);
 	}
 
+	//PAGES REV SLIDER
+	if ( $('.rev-slider-page').length != 0 )
+		  $('.rev-slider-page').revolution({
+					delay:9000,
+					startwidth: $( window ).width(),
+					startheight: 532,
+					autoHeight:"off",
+					fullScreenAlignForce:"off",
+
+					onHoverStop:"off",
+
+					thumbWidth:100,
+					thumbHeight:50,
+					thumbAmount:3,
+
+					hideThumbsOnMobile:"off",
+					hideBulletsOnMobile:"on",
+					hideArrowsOnMobile:"off",
+					hideThumbsUnderResoluition:0,
+
+					hideThumbs:-1,
+					hideTimerBar:"on",
+
+					keyboardNavigation:"off",
+
+					navigationType:"bullet",
+					navigationArrows:"small",
+					navigationStyle:"round",
+
+					navigationHAlign:"center",
+					navigationVAlign:"bottom",
+					navigationHOffset: 0,
+					navigationVOffset:-30,
+
+					soloArrowLeftHalign:"left",
+					soloArrowLeftValign:"center",
+					soloArrowLeftHOffset:20,
+					soloArrowLeftVOffset:0,
+
+					soloArrowRightHalign:"right",
+					soloArrowRightValign:"center",
+					soloArrowRightHOffset:20,
+					soloArrowRightVOffset:0,
 
 
+					touchenabled:"off",
+					swipe_velocity:"0.7",
+					swipe_max_touches:"1",
+					swipe_min_touches:"1",
+					drag_block_vertical:"false",
+
+					stopAtSlide:-1,
+					stopAfterLoops:-1,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					hideSliderAtLimit:0,
+
+					fullWidth:"on",
+					fullScreen:"off",
+					fullScreenOffsetContainer: "",
+
+					dottedOverlay:"none",
+					forceFullWidth:"off",
+
+		      shadow:0
+		  });
 
 
+	var dustContent = $( $("#dust-content") );
+	//DUST MOUSEMOVE
+	$("body").on("mousemove", function(e){
+		if( dustContent.length != 0 )
+			dustContent
+				.css("left", (10 + (-e.pageX/100)))
+				.css("bottom", (10 + (e.pageY/100)));
+	});
+	function dustCanvas(){
 
+	  window.canvasDust = {
+	  	circle: {
+	  		elements : [],
+	  		firstElPos: [],
+	  		pos: []
+	  	},
+	  	stepCheck: function (posx, posy, radius){
+	  		var arr = {
+										x: posx,
+										y: posy,
+										radius: radius
+									};
 
+				canvasDust.circle.pos.push(arr);
 
+				return arr;
+	  	},
+	  	circleAnimate : function ( canvasObj, x, y, i ){
 
+				var tl = new TimelineMax({
+					repeat: -1,
+					yoyo: true
+				});
 
+				tl
+					.to(canvasObj, getRandomIntFloat(3, 6), {
+			      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
+			      														 getRandomInt( y, y+100 ),
+			      														 getRandomInt( 0, 2 ) )})
+					.to(canvasObj, getRandomIntFloat(3, 6), {
+			      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
+			      														 getRandomInt( y, y+100 ),
+			      														 getRandomInt( 1, 3 ) )})
+					.to(canvasObj, getRandomIntFloat(3, 6), {
+			      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
+			      														 getRandomInt( y, y+100 ),
+			      														 getRandomInt( 1, 2 ) )})
+					.to(canvasObj, getRandomIntFloat(3, 6), {
+			      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
+			      														 getRandomInt( y, y+100 ),
+			      														 getRandomInt( 1, 2 ) )})
+					.to(canvasObj, getRandomIntFloat(3, 6), {
+			      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
+			      														 getRandomInt( y, y+100 ),
+			      														 getRandomInt( 0, 3 ) )})
 
+			}
+	  }
 
+		var width = window.innerWidth;
+		var height = 450;
 
+		var stage = new Konva.Stage({
 
+			container: 'dust-content',
+			width: width,
+			height: height
 
-
-
-
-
-
-
-
-          
-          var star = $(".dust-container circle");
-
-          function fnRectang(){
-
-            var rectMorph = new TimelineMax({
-              repeat: -1,
-              yoyo: true
-            });
-            rectMorph
-            .to( star, 4, {
-              attr: {
-              	r: 1,
-                cx: "55%",
-								cy: "60%"
-              }
-            })
-            .to( star, 3, {
-              attr: {
-              	r: 1,
-                cx: "42%",
-								cy: "65%"
-              }
-            })
-            .to( star, 4, {
-              attr: {
-              	r: 1,
-                cx: "35%",
-								cy: "45%"
-              }
-            })
-
-
-          }
-          //fnRectang();
-
-
-
-
-          function fnRotation(){
-            TweenMax.to( star,  1, {
-              rotation: 360,
-              transformOrigin: "center center",
-              repeat: 1, 
-              ease: Back.easeOut
-            });
-          }
-
-
-          var asd = 0;
-
-
-
-		$("body").on("mousemove", function(e){
-		$("#dust-content").css("left", (10 + (-e.pageX/100)))
-					 .css("bottom", (0 + (e.pageY/10)));
 		});
 
+		var layer = new Konva.Layer();
 
 
+		for ( var i = 0 ; i < 100 ; i++ ){
 
-//canvasDust
+			var firstElPosX = getRandomInt( 0, width );
+			var firstElPosY = getRandomInt( 0, height );
 
-  window.canvasDust = {
+			canvasDust.circle.firstElPos[i] = {
+				x: firstElPosX,
+				y: firstElPosY
+			}
 
-  	circle: {
-  		elements : [],
-  		firstElPos: [],
-  		pos: []
-  	},
-
-  	stepCheck: function (posx, posy, radius){
-  		var arr = {
-									x: posx,
-									y: posy,
-									radius: radius
-								};
-
-			canvasDust.circle.pos.push(arr);
-
-			return arr;
-  	},
-
-  	circleAnimate : function ( canvasObj, x, y, i ){
-
-			var tl = new TimelineMax({
-				repeat: -1,
-				yoyo: true
+			canvasDust.circle.elements[i] = new Konva.Circle({
+				x: firstElPosX,
+				y: firstElPosY,
+				opacity: 0.3,
+				radius: 1,
+				fill: 'white',
+				strokeWidth: 4
 			});
 
-			tl
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
-				.to(canvasObj, getRandomIntFloat(2, 5), {
-		      konva: canvasDust.stepCheck( getRandomInt( x, x+200 ), 
-		      														 getRandomInt( y, y+100 ),
-		      														 getRandomInt( 0, 2 ), )})
+			layer.add( canvasDust.circle.elements[i] );
 
-		}
-  }
-
-	var width = window.innerWidth;
-	var height = 450;
-
-	var stage = new Konva.Stage({
-
-		container: 'dust-content',
-		width: width,
-		height: height
-
-	});
-
-	var layer = new Konva.Layer();
-
-
-	for ( var i = 0 ; i < 120 ; i++ ){
-
-		var firstElPosX = getRandomInt( 0, width );
-		var firstElPosY = getRandomInt( 0, height );
-
-		canvasDust.circle.firstElPos[i] = {
-			x: firstElPosX,
-			y: firstElPosY
+			canvasDust.circleAnimate( canvasDust.circle.elements[i], firstElPosX, firstElPosY, i );
+			
 		}
 
-		canvasDust.circle.elements[i] = new Konva.Circle({
-			x: firstElPosX,
-			y: firstElPosY,
-			opacity: 0.3,
-			radius: 1,
-			fill: 'white',
-			strokeWidth: 4
-		});
-
-		layer.add( canvasDust.circle.elements[i] );
-
-		canvasDust.circleAnimate( canvasDust.circle.elements[i], firstElPosX, firstElPosY, i );
-		
+		stage.add(layer);
 	}
-
-	stage.add(layer);
+	if( dustContent.length != 0 ) dustCanvas();
 
 
 
 	});
 }) (jQuery);
-
-
-
-
 
 
 
@@ -409,3 +397,18 @@ function scrolledDiv(el) {
 
   	return ((elBottom <= docViewBottom) && (elTop >= docViewTop));
 }
+
+
+
+
+
+
+
+
+
+ aspectRatio: '1:0.666'
+
+
+
+
+

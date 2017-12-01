@@ -138,7 +138,6 @@
 
 
 
-
 	<!-- MIN - MENU -->
   <div class="min-menu hidden-md hidden-lg">
 	  <input id="hamburger" class="hamburger" type="checkbox"/>
@@ -150,7 +149,7 @@
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="about.html">О нас</a>
 					<ul class="sub-menu-1">
-						<li><a href="ouremployees.html">Наши сотрудники</a></li>
+						<li><a href="coworkers.html">Наши сотрудники</a></li>
 					</ul>
 				</li>
 				<li><a href="portfolio.html">Портфолио</a></li>
@@ -206,14 +205,14 @@
 						<div id="fail-message"></div>
 					</div>
 					<h3>Связаться с нами</h3>
-					<form id="feedback-contacts" method="post" action="" class="contact-form">
+					<form id="feedback-form" method="post" action="" class="contact-form">
 
 
 
 						<!-- NAME -->
 						<span class="input input--nariko input-name">
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="text" 
 										 id="input-1" 
 										 name="name"
@@ -230,7 +229,7 @@
 						<span class="input input--nariko input-email">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="email" 
 										 id="input-2" 
 										 name="email"
@@ -248,7 +247,7 @@
 						<span class="input input--nariko input-phone">
 
 							<input class="input__field input__field--nariko" 
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="tel" 
 										 id="input-3" 
 										 name="tel"
@@ -269,7 +268,7 @@
 							<textarea class="" 
 										 style="resize: none;"
 										 id="textarea-4"
-										 form="feedback-contacts"
+										 form="feedback-form"
 										 type="text" 
 										 name="message"
 										 autocomplete="off" 
@@ -280,7 +279,7 @@
 						</span>
 
 						<div class="form-footer">
-			      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts" autofocus="autofocus">
+			      	<button type="submit" class="align-right btn-default submit" form="feedback-form" autofocus="autofocus">
 			      		<b>Отправить</b>
 			      	</button>
 			      </div>
@@ -341,27 +340,24 @@
 			<div class="rev-slider-page" >
 				<ul>
 
+
 					<!-- SLIDE -->
 					<li class="slide-1" 
 							data-transition="fade"
-							data-masterspeed="2000">
+							data-masterspeed="3500">
 
-						<img src="img/slider/pages/about-slide-1.jpg">
+						<img src="img/slider/pages/contacts-slide-1.jpg">
 						<div class="container">
 							<div class="caption slide-header fade fadeout" 
-									
 									 data-y="center"
-									 
-									 data-hoffset="100"
 									 data-speed="1300"
-									 data-start="1600" 
+									 data-start="2000" 
 									 data-easing="easeOutBack">
-
 									<h1  class="tp-caption start" 
-											 data-speed="1000"
+											 data-speed="1500"
 											 data-start="900">
-											 404
-											 
+											 Контакты<br>
+										
 									</h1>
 
 							</div>
@@ -386,29 +382,383 @@
 
 
 
-		<div class="row about align-center-sm m-v-60">
+
+
+
+
+
+
+
+
+
+
+		<div class="bg-wall-up"></div>
+		<div class="row contacts align-center-sm m-v-100">
 			<div class="container">
 
 
+				<div class="contacts-content">
 
-					<div class="p-v-60 m-v-60 align-center">
+					<div class="contacts-info col-md-5">
 
-						<h1>
-							<font size="7" face="cursive" color="#d5ac1d">
-								<sub>4</sub>0<sup>4</sup>
-							</font>
-						</h1>
 
-						<h3>Страница не найдена</h3>
-						<p>
-							<strong>Вероятные причины:</strong><br>
-							Была допущена ошибка при наборе адреса.<br>
-							Вы нажали на устаревшую ссылку.
-						</p>
-						<p>
-							<a href="index.html"><u>Перейти на главную</u></a>
-						</p>
+
+						<div class="contacts-info-content">
+
+							<div class="info-item">
+								<div class="icon-content">
+									<img src="img/icons/mobil.png" />
+								</div>
+								<div class="desc-content">
+									<p class="text-style-1">Контактный телефон</p>
+									<p>+ 998 (90) 230-33-88</p>
+								</div>
+							</div>
+
+							<div class="info-item">
+								<div class="icon-content">
+									<img src="img/icons/envelope.png" />
+								</div>
+								<div class="desc-content">
+									<p class="text-style-1">Email</p>
+									<p>cityrender@info.com</p>
+								</div>
+							</div>
+
+							<div class="info-item">
+								<div class="icon-content">
+									<img src="img/icons/marker.png" />
+								</div>
+								<div class="desc-content">
+									<p class="text-style-1">Адрес</p>
+									<p>Республика Узбекистан, город Ташкент, ул Кушбеги</p>
+								</div>
+							</div>
+							
+							<div class="info-item">
+								<div class="icon-content">
+									<img src="img/icons/car.png" />
+								</div>
+								<div class="desc-content">
+									<p class="text-style-1">Время работы</p>
+									<p>понедельник - пятница с 09:00 до 18:00</p>
+								</div>
+							</div>
+						</div>
+
+
+
+						<div class="feedback-contacts col-md-offset-1">
+
+							<div class="p-h-30">
+
+								<div class="col-md-12 success-info">
+									<div id="success-message"></div>
+									<div id="fail-message"></div>
+								</div>
+
+								<p class="text-style-1">Связаться с нами</p>
+				      	<form id="feedback-contacts-form" method="post" action="feedback.php" class="contact-form">
+
+									<input class="form-control" type="text" name="name" 
+												 placeholder="Имя" 
+												 autocomplete="off" 
+												 required="required"/>
+
+									<input class="form-control" type="tel" name="tel" 
+												 placeholder="Номер телефона" 
+												 autocomplete="off" 
+												 required="required"
+												 minlength="5"/>
+
+									<textarea class="form-control"
+												 name="message"
+												 placeholder="Сообщение"></textarea>
+						      <div class="modal-footer">
+						      	<button type="submit" class="align-right btn-default submit" form="feedback-contacts-form">Отправить</button>
+						      </div>
+				      	</form>
+
+
+
+					    </div>
+
+						</div>
+
+
 					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="map-content col-md-7">
+						<div id="map"></div>
+						<script>
+
+						var i = {
+										
+										gm_title : 								'Мы',
+										//gm_icon: 									"img/icons/marker.png",
+
+										gm_marker_position_lat:  	41.293000,
+										gm_marker_position_lng:  	69.219502,
+
+										gm_zoom: 									13,
+
+										gm_position_lat: 			 		41.298539,
+										gm_position_lng: 				 	69.219502
+								}
+
+				   	function initMap() {
+
+								var map = new google.maps.Map(document.getElementById('map'), {
+										zoom: i.gm_zoom,
+										center: {lat: i.gm_position_lat, lng: i.gm_position_lng},
+										disableDefaultUI: true,
+										styles: [
+														  {
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#ebe3cd"
+														      }
+														    ]
+														  },
+														  {
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#523735"
+														      }
+														    ]
+														  },
+														  {
+														    "elementType": "labels.text.stroke",
+														    "stylers": [
+														      {
+														        "color": "#f5f1e6"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "administrative",
+														    "elementType": "geometry.stroke",
+														    "stylers": [
+														      {
+														        "color": "#c9b2a6"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "administrative.land_parcel",
+														    "elementType": "geometry.stroke",
+														    "stylers": [
+														      {
+														        "color": "#dcd2be"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "administrative.land_parcel",
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#ae9e90"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "landscape.natural",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#dfd2ae"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "poi",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#dfd2ae"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "poi",
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#93817c"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "poi.park",
+														    "elementType": "geometry.fill",
+														    "stylers": [
+														      {
+														        "color": "#a5b076"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "poi.park",
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#447530"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#f5f1e6"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road.arterial",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#fdfcf8"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road.highway",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#f8c967"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road.highway",
+														    "elementType": "geometry.stroke",
+														    "stylers": [
+														      {
+														        "color": "#e9bc62"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road.highway.controlled_access",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#e98d58"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road.highway.controlled_access",
+														    "elementType": "geometry.stroke",
+														    "stylers": [
+														      {
+														        "color": "#db8555"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "road.local",
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#806b63"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "transit.line",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#dfd2ae"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "transit.line",
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#8f7d77"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "transit.line",
+														    "elementType": "labels.text.stroke",
+														    "stylers": [
+														      {
+														        "color": "#ebe3cd"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "transit.station",
+														    "elementType": "geometry",
+														    "stylers": [
+														      {
+														        "color": "#dfd2ae"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "water",
+														    "elementType": "geometry.fill",
+														    "stylers": [
+														      {
+														        "color": "#b9d3c2"
+														      }
+														    ]
+														  },
+														  {
+														    "featureType": "water",
+														    "elementType": "labels.text.fill",
+														    "stylers": [
+														      {
+														        "color": "#92998d"
+														      }
+														    ]
+														  }
+														]
+								});
+								var marker = new google.maps.Marker({
+									position: {lat: i.gm_marker_position_lat, lng: i.gm_marker_position_lng},
+									map: map,
+									//icon: i.gm_icon,
+									title: i.gm_title
+								});
+								var infoWindow = new google.maps.InfoWindow({
+									content: i.gm_content,
+									maxWidth: "400"
+								});
+
+							}//initMap end
+
+					  </script>
+						<script async defer
+							src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVUinUZqQAIM1NfbavWbOKtsc3l-XE_ag&callback=initMap">
+						</script>
+					</div>
+				</div>
 
 
 			</div>
@@ -437,7 +787,7 @@
 
 	<!-- FOOTER -->
 	<footer id="footer" class="container-fluid align-center-sm">
-		<div class="bg bg-cover"></div>
+		<div class="bg bg-cover hidden-xs hidden-sm"></div>
 		<div class="container">
 				
 
@@ -474,7 +824,7 @@
 							(ориентир Главпочтамт)
 						</address>
 					</div>
-					<div class="footer-copy p-v-30 link-hover">
+					<div class="footer-copy p-v-30 link-hover hidden-xs hidden-sm">
 						<p>
 							<a href="https://www.life-style.uz" title="Создание и продвижение сайтов в Ташкенте">
 									Создание сайтов
@@ -556,6 +906,7 @@
 		</div>
 	</footer>
 	
+
 
 
 
