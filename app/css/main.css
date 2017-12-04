@@ -17614,6 +17614,7 @@ button:hover, button:focus {
     height: 50px;
     right: -1px;
     top: -1px;
+    z-index: 1;
     -webkit-border-radius: 0 5px;
     border-radius: 0 5px; }
     .modal-dialog .btn:active {
@@ -17652,6 +17653,12 @@ button:hover, button:focus {
   .form-footer button {
     padding: 12px 20px;
     margin-left: auto; }
+
+.success-info #messages {
+  color: #7cfc00; }
+
+.success-info #error {
+  color: tomato; }
 
 .success-info {
   color: white;
@@ -18254,6 +18261,19 @@ main {
     margin: 20px 0;
     padding: 0 5px; }
 
+.date-content {
+  color: #838383;
+  margin: 20px 0;
+  padding: 0 5px; }
+  .date-content .view {
+    padding-left: 25px; }
+  .date-content i {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    margin-right: 5px;
+    color: #a88817; }
+
 .short-partners h1 {
   text-align: center; }
 
@@ -18401,17 +18421,19 @@ main {
     width: 0;
     border-color: black; }
 
-.portfolio-in-content figure {
-  position: relative; }
-  .portfolio-in-content figure a:focus {
-    outline: none; }
-  .portfolio-in-content figure:hover .portfolio-in-hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 1; }
-    .portfolio-in-content figure:hover .portfolio-in-hover .loupe {
-      -webkit-transform: scale(0.8);
-      -ms-transform: scale(0.8);
-      transform: scale(0.8); }
+.portfolio-in-content figure a:focus {
+  outline: none; }
+
+.portfolio-in-content figure:hover .portfolio-in-hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 1; }
+  .portfolio-in-content figure:hover .portfolio-in-hover .loupe {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8); }
+
+.portfolio-in-content img {
+  width: 100%; }
 
 .portfolio-in-hover {
   -webkit-transition: all 0.3s ease-in-out;
@@ -18419,8 +18441,6 @@ main {
   transition: all 0.3s ease-in-out;
   position: absolute;
   overflow: hidden;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
   background-color: transparent;
   width: 100%;
   height: 100%;
@@ -18443,7 +18463,27 @@ main {
     width: 100%;
     text-align: center; }
     .portfolio-in-hover .loupe img {
+      display: initial;
       width: 25%; }
+
+/* clear fix */
+.grid-img:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* ---- .grid-item ---- */
+.grid-img-sizer,
+.grid-img-item {
+  width: 20%; }
+
+.grid-img-item {
+  float: left; }
+
+.grid-img-item img {
+  display: block;
+  padding: 3px;
+  max-width: 100%; }
 
 .coworkers-content figure {
   text-align: center; }
