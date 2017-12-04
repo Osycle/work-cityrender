@@ -120,7 +120,9 @@ $(function(){
 	}
 
 
-
+	if ( !$(".short-news-content").text().trim().length )
+		if ( $(".search-not-found").length )
+			$(".search-not-found").addClass("show");
 
 	//RESIZE
 	$( window ).on("resize", function(e){});

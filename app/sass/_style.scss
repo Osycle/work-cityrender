@@ -2064,14 +2064,14 @@ main{
 .portfolio{
 
 	.img-content{
+		text-align: center;
 		img{
 			width: 100%;
 		}
-		text-align: center;
 	}
 	.date-content{
 		z-index: 12;
-		h5{
+		&, h5{
 			margin: 0 ;
 		}
 		padding: 5px 10px;
@@ -2084,8 +2084,14 @@ main{
 	}
 }
 .last-item{
+
 	.img-content{
+		width: 100%;
+		height: 360px;
 		position: relative;
+		img{
+			height: inherit;
+		}
 	}
 	a{
 		img{
@@ -2109,6 +2115,7 @@ main{
 }
 .portfolio-items{
 	figure{
+		height: 230px;
 		position: relative;
 		a{
 			.portfolio-item-hover{
@@ -2125,6 +2132,13 @@ main{
 				hr{
 					width: 100%;
 				}
+			}
+		}
+		.img-content{
+			height: 100%;
+			width: 100%;
+			img{
+				height: inherit;
 			}
 		}
 	}

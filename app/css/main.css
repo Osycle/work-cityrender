@@ -18329,13 +18329,17 @@ main {
   position: absolute;
   color: black;
   background-color: #d5ac1d; }
-  .portfolio .date-content h5 {
+  .portfolio .date-content, .portfolio .date-content h5 {
     margin: 0; }
   .portfolio .date-content time {
     font-weight: 600; }
 
 .last-item .img-content {
+  width: 100%;
+  height: 360px;
   position: relative; }
+  .last-item .img-content img {
+    height: inherit; }
 
 .last-item a img {
   padding: 10px;
@@ -18362,6 +18366,7 @@ main {
   align-items: center; }
 
 .portfolio-items figure {
+  height: 230px;
   position: relative; }
   .portfolio-items figure a .portfolio-item-hover {
     background-color: rgba(213, 172, 29, 0); }
@@ -18373,6 +18378,11 @@ main {
     transform: translate3d(0, 0, 0); }
   .portfolio-items figure a:hover hr {
     width: 100%; }
+  .portfolio-items figure .img-content {
+    height: 100%;
+    width: 100%; }
+    .portfolio-items figure .img-content img {
+      height: inherit; }
 
 .portfolio-item-hover {
   -webkit-transition: all 0.3s ease-in-out;
