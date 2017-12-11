@@ -775,7 +775,7 @@ $header-height: 50px;
 	left: 0;
 	font-family: $font-family-2;
 	position: relative;
-	background: $bg-image-1 center top;
+	background: $bg-image-1 center -157px;
 	//height: $header-height;
 	color: white;
 }
@@ -1042,13 +1042,36 @@ $header-height: 50px;
 
 
 
-
-
+.min-phones{
+	font-size: 0.74em;
+	margin-top: 27px;
+}
+.min-logo{
+	text-align: center;
+	img{
+		width: 80px;
+	}
+}
+.min-social{
+	text-align: left;
+	margin: 4px 0;
+	margin-bottom: 10px;
+	li{
+		margin:0 2.5px;
+		display: inline-block;
+	}
+}
 
 //MINI MENU
 .min-menu{
 	 z-index: 1030;
 	 position: relative;
+	 label.hamburger{
+	 	height: 25px;
+    width: 35px;
+		top: 20px;
+		right: 20px;
+	 }
 }
 
 
@@ -1448,13 +1471,13 @@ main{
 }
 
 .bg-wall-up{
-	
-		background: $bg-image-1 center -400px;
-		position: absolute;
-		height: 100%;
-		width: 100%;
-		    z-index: -1;
-		//transform: scaleY(-1);
+	display: none;
+	background: $bg-image-1 center -400px;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	    z-index: -1;
+	//transform: scaleY(-1);
 
 }
 .bg-wall-down{
@@ -1676,7 +1699,7 @@ main{
 			font-size: em(50, 16);
 			font-weight: 500;
 			letter-spacing: 3px;
-			line-height: 60%;
+			line-height: 100%;
 		}
 		p{
 			position: relative;
@@ -1685,7 +1708,7 @@ main{
 			font-size: em(26, 16);
 			
 			margin-top: 15px;
-			line-height: 80% !important;
+			line-height: 100% !important;
 			
 		}
 		.btn-default{
@@ -1731,7 +1754,7 @@ main{
 			font-size: em(50, 16);
 			font-weight: 500;
 			letter-spacing: 3px;
-			line-height: 60%;
+			line-height: 100%;
 		}
 		p{
 			position: relative;
@@ -1740,7 +1763,7 @@ main{
 			font-size: em(26, 16);
 			
 			margin-top: 15px;
-			line-height: 80% !important;
+			line-height: 100% !important;
 			
 		}
 
@@ -1771,14 +1794,14 @@ main{
 
 .line-shadow-1{
   box-shadow: 0px 2px 50px 16px black;
-  z-index: 500;
+  z-index: 21;
   position: relative;
   border: 0;
   margin: 0;
 }
 .line-shadow-2{
   box-shadow: 0px -5px 40px 20px black;
-  z-index: 300;
+  z-index: 21;
   margin: 0;
   position: relative;
   border: 0;
@@ -2064,14 +2087,33 @@ main{
 .portfolio{
 
 	.img-content{
-		text-align: center;
 		img{
 			width: 100%;
+	    
+		}
+
+		text-align: center;
+	}
+	.last-item{
+		.img-content{
+			width: 100%;
+		}
+	}
+	.last-item ~ div:not(.last-item){
+		.img-content{
+			@media (min-width: 1199px){
+				//height: 240px;
+				width: 100%;
+			}
+			@media (max-width: 1200px){
+				//height: 180px;
+				width: 100%;
+			}
 		}
 	}
 	.date-content{
 		z-index: 12;
-		&, h5{
+		h5{
 			margin: 0 ;
 		}
 		padding: 5px 10px;
@@ -2084,14 +2126,8 @@ main{
 	}
 }
 .last-item{
-
 	.img-content{
-		width: 100%;
-		height: 360px;
 		position: relative;
-		img{
-			height: inherit;
-		}
 	}
 	a{
 		img{
@@ -2115,7 +2151,6 @@ main{
 }
 .portfolio-items{
 	figure{
-		height: 230px;
 		position: relative;
 		a{
 			.portfolio-item-hover{
@@ -2132,13 +2167,6 @@ main{
 				hr{
 					width: 100%;
 				}
-			}
-		}
-		.img-content{
-			height: 100%;
-			width: 100%;
-			img{
-				height: inherit;
 			}
 		}
 	}
@@ -2208,7 +2236,6 @@ main{
 
 
 
-
 //-------------- PORTFOLIO-IN
 
 .portfolio-in-content{
@@ -2216,7 +2243,7 @@ main{
 	figure{
 		//position: relative;
 		a{
-			
+
 		}
 		a:focus{
 			outline: none;
@@ -2242,7 +2269,7 @@ main{
 	overflow: hidden;
 	background-color: rgba(black, 0.0);
 	width: 100%;
-	height: 100%;	
+	height: 100%;
 	top: 0;
 	display: flex;
 	align-items: center;
@@ -2481,7 +2508,7 @@ main{
 	display: block;
 	height: 650px;
 	z-index: 1;
-	color: $color_3;
+	//color: $color_3;
 
 	h1{
 		margin-top: 0;
@@ -2491,13 +2518,14 @@ main{
 			left: 50px;
 		}
 	}
+	h1,h2,h3,h4,h5{
+		color: $color_1;
+	}
 	img{
 			vertical-align: text-bottom;
 	}
 	p{
-		color: white;
-		text-shadow: 6px 6px 8px rgba(0, 0, 0, 0.5);
-		margin-left: 10px;
+		color: black;
 	}
 	@media only screen and ( max-width: 991px ){
 		height: 350px;
@@ -2800,6 +2828,7 @@ main{
 #footer{
 	position: relative;
 	.bg{
+		display: none;
 		background: $bg-image-1 no-repeat center -500px;
 		position: absolute;
 		height: 100%;

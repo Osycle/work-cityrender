@@ -108,13 +108,21 @@ $(function(){
 
 
 
+	function onLoaded  (){
+					
+	//MASONRY
+	if( $('.grid-img').length )
+		$('.grid-img').masonry({
+		  itemSelector: '.grid-img-item',
+		  columnWidth: '.grid-img-sizer',
+		  percentPosition: true
+		});
+	}
 
 
-
-
-
-
-
+	if ( !$(".short-news-content").text().trim().length )
+		if ( $(".search-not-found").length )
+			$(".search-not-found").addClass("show");
 
 	//RESIZE
 	$( window ).on("resize", function(e){});
@@ -164,7 +172,9 @@ $(function(){
 
 				$(".preloader").slideToggle();
 				$( "body" ).css("overflow-y", "auto");
-				scroll(0, 0);
+				onLoaded()
+
+			
 
 			}, 600)
 
@@ -339,7 +349,7 @@ $(function(){
 
 		stage.add(layer);
 	}
-	if( dustContent.length != 0 ) dustCanvas();
+	if( dustContent.length != 0 && !isMac) dustCanvas();
 
 
 
@@ -361,6 +371,7 @@ $(function(){
 
 var isWebkit = /Webkit/i.test(navigator.userAgent),
 		isChrome = /Chrome/i.test(navigator.userAgent),
+		isMac =  	 /Mac/i.test(navigator.userAgent),
 		isMobile = !!("ontouchstart" in window),
 		isAndroid = /Android/i.test(navigator.userAgent);
 
