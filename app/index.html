@@ -49,7 +49,7 @@
 				<!-- HEADER NAVBAR -->
 				<div class="header-navbar">
 
-<!-- 					<div class="p-0">
+					<div class="p-0 hidden-xs hidden-sm">
 
 
 						<div class="slogan hidden-xs hidden-sm">
@@ -89,9 +89,9 @@
 							</p>
 						</div>
 
-					</div> -->
+					</div>
 
-					<div class="p-0">
+					<div class="p-0 hidden-md hidden-sm">
 
 
 
@@ -172,11 +172,22 @@
 
 	<!-- MIN - MENU -->
   <div class="min-menu hidden-md hidden-lg">
-	  <input id="hamburger" class="hamburger" type="checkbox"/>
-	  <label class="hamburger" for="hamburger">
+  	<div class="bg-black clearfix"></div>
+		<input id="hamburger" class="hamburger" type="checkbox"/>
+		<label class="hamburger" for="hamburger">
 	    <i></i>
+	    <text>
+	    	<open>Меню</open>
+	    	<close></close>
+	    </text>
 	  </label>
 	  <section class="drawer-list">
+	    <div class="min-lang">
+				<ul>
+					<li class="active"><a href="ru">RU</a></li>
+					<li><a href="en">EN</a></li>
+				</ul>
+			</div>
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="about.html">О нас</a>

@@ -127,14 +127,22 @@ $(function(){
 	//RESIZE
 	$( window ).on("resize", function(e){});
 
-	//SCROLL
 	var header_status = false;
 	$( window ).on("scroll", function(e){
+
 		if($(window).scrollTop() > 300 && header_status == false){
-			header_status = true; 
+
+			header_status = true;
+			console.log( $(".min-menu") )
+			if ( $(".min-menu") ) $(".min-menu").addClass("scrolled");
+
 		}else if($(window).scrollTop() < 300 && header_status == true){
+
 			header_status = false;
+			if ( $(".min-menu") ) $(".min-menu").removeClass("scrolled");
+
 		}
+
 	});
 
 
