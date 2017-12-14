@@ -1065,7 +1065,7 @@
 			    $('.rev-slider').revolution({
 						delay:9000,
 						startwidth: $( window ).width(),
-						startheight: 610,
+						startheight: $( window ).width() < 992 ? 350 : 610,
 						autoHeight:"off",
 						fullScreenAlignForce:"off",
 
