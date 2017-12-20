@@ -17309,6 +17309,10 @@ button:hover, button:focus {
     .pagination-div .pagination li.active a {
       background-color: transparent; }
 
+.list-default li {
+  list-style-position: inside;
+  list-style-type: square; }
+
 .list-style-2 ul {
   padding-left: 15px;
   position: relative;
@@ -17354,7 +17358,6 @@ button:hover, button:focus {
   left: 0;
   font-family: "intro";
   position: relative;
-  background: url("../img/bg/bg-1.jpg") no-repeat center -157px;
   color: white; }
 
 .skin-header-top {
@@ -19322,6 +19325,11 @@ input[type="email"].hidden_in {
   overflow: hidden; }
 
 @media (max-width: 450px) {
+  #stbotph {
+    left: 50%;
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9); }
   #content1 {
     height: 60px;
     margin: 35px 0 0 -90px;
@@ -19378,7 +19386,7 @@ input[type="email"].hidden_in {
   width: 260px;
   position: relative;
   top: 0px;
-  /* background: $color_1; */
+  /* background: $color_1;*/
   color: #d5ac1d;
   padding: 10px 20px;
   font-size: 14px; }
